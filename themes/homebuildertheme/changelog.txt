@@ -1,0 +1,11 @@
+== Changelog ==
+
+= Theme Name: Home Builder Theme Pro=
+
+= Version: 1.0 =
+
+* * Real Estate Theme is created on 16/03/2012.
+
+= Version: 1.1 =
+
+* * Timthumb script remove, Dynamic Image Cropping script used.

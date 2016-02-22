@@ -1,0 +1,529 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Home Builder Theme v1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-04-10 10:59:19+0000\n"
+"Last-Translator: admin <dyba03@yandex.ua>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:17
+#@ hb
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Что-то пошло не так?"
+
+#: 404.php:21
+#@ hb
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "К сожалению, ничего не нашлось."
+
+#: 404.php:27
+#@ hb
+msgid "Most Used Categories"
+msgstr "Популярные рубрики"
+
+#. translators: %1$s: smilie
+#: 404.php:35
+#, php-format
+#@ hb
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Вы смотрите архивы за месяц %1$s"
+
+#: admin/options-framework.php:194
+#@ default
+msgid "Save Options"
+msgstr ""
+
+#: admin/options-framework.php:195
+#@ default
+msgid "Restore Defaults"
+msgstr ""
+
+#: admin/options-framework.php:195
+#@ default
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: admin/options-framework.php:223
+#@ optionsframework
+msgid "Default options restored."
+msgstr ""
+
+#: admin/options-framework.php:255
+#@ optionsframework
+msgid "Options saved."
+msgstr ""
+
+#: admin/options-framework.php:304
+#@ default
+msgid "Theme Options"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:22
+#@ default
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:113
+#@ default
+msgid "Upload"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:135
+#@ optionsframework
+msgid "View File"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:260
+#@ optionsframework
+msgid "Gallery"
+msgstr ""
+
+#: admin/options-medialibrary-uploader.php:260
+#@ optionsframework
+msgid "Previously Uploaded"
+msgstr ""
+
+#: archive.php:19
+#, php-format
+#@ hb
+msgid "Daily Listings: %s"
+msgstr "Архив за день %s"
+
+#: archive.php:21
+#, php-format
+#@ hb
+msgid "Monthly Listings: %s"
+msgstr "Архив за месяц %s"
+
+#: archive.php:23
+#, php-format
+#@ hb
+msgid "Yearly Listings: %s"
+msgstr "Архив за год %s"
+
+#: archive.php:25
+#@ hb
+msgid "Blog Archives"
+msgstr "Архив"
+
+#: archive.php:42
+#: author.php:54
+#: blog-property.php:62
+#: category.php:26
+#: index.php:23
+#: search.php:38
+#: tags.php:20
+#@ hb
+msgid "&larr; Older posts"
+msgstr "&larr; Предыдущие записи"
+
+#: archive.php:44
+#: author.php:56
+#: blog-property.php:64
+#: category.php:28
+#: index.php:25
+#: search.php:40
+#: tags.php:22
+#@ hb
+msgid "Newer posts &rarr;"
+msgstr "Новые записи &rarr;"
+
+#: attachment.php:14
+#, php-format
+#@ hb
+msgid "Return to %s"
+msgstr "Вернуться к %s"
+
+#. translators: %s - title of parent post
+#: attachment.php:17
+#, php-format
+#@ hb
+msgid "<span>&larr;</span> %s"
+msgstr ""
+
+#: attachment.php:21
+#, php-format
+#@ hb
+msgid "By %2$s"
+msgstr "%2$s"
+
+#: attachment.php:21
+#, php-format
+#@ hb
+msgid "View all posts by %s"
+msgstr "Смотреть все записи автора %s"
+
+#: attachment.php:27
+#, php-format
+#@ hb
+msgid "Published %2$s"
+msgstr "Опубликовано %2$s"
+
+#: attachment.php:33
+#, php-format
+#@ hb
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:33
+#@ hb
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:38
+#: attachment.php:77
+#@ hb
+msgid "Edit"
+msgstr "Редактировать"
+
+#: attachment.php:74
+#@ hb
+msgid "Continue reading &rarr;"
+msgstr "Читать &rarr;"
+
+#: attachment.php:75
+#@ hb
+msgid "Pages:"
+msgstr "Страница:"
+
+#: author.php:13
+#, php-format
+#@ hb
+msgid "Property By Agents: %s"
+msgstr "Недвижимость агента: %s"
+
+#: author.php:33
+#, php-format
+#@ hb
+msgid "About %s"
+msgstr "Про %s"
+
+#: blog-property.php:41
+#: front-page.php:438
+#: loop.php:25
+#: single.php:28
+#@ hb
+msgid "Area:"
+msgstr "Площадь:"
+
+#: blog-property.php:42
+#: front-page.php:439
+#: functions/metabox.php:13
+#: loop.php:26
+#@ hb
+msgid "Bed Room:"
+msgstr "Спальни:"
+
+#: blog-property.php:43
+#: front-page.php:440
+#: loop.php:27
+#: single.php:30
+#@ hb
+msgid "Price:"
+msgstr "Цена:"
+
+#: blog-property.php:46
+#: front-page.php:443
+#: loop.php:30
+#: single.php:33
+#@ hb
+msgid "City:"
+msgstr "Город:"
+
+#: blog-property.php:47
+#: front-page.php:444
+#: loop.php:31
+#: single.php:34
+#@ hb
+msgid "Location:"
+msgstr "Расположение:"
+
+#: blog-property.php:55
+#: front-page.php:455
+#: loop.php:39
+#: single.php:51
+#: template-portfolio.php:49
+#@ hb
+msgid "Sorry, no posts matched your criteria."
+msgstr "К сожалению, ничего не нашлось."
+
+#: category.php:13
+#, php-format
+#@ hb
+msgid "Property Listings: %s"
+msgstr "Список недвижимости: %s"
+
+#: front-page.php:280
+#@ hb
+msgid "Buy Sell Rent Property  In Contact Us For Immediately Sell London"
+msgstr "Небольшой заголовок относительно продаваемой недвижимости или сайта"
+
+#: front-page.php:315
+#@ hb
+msgid "Powerful Reporting"
+msgstr "Небольшая заметка"
+
+#: front-page.php:320
+#@ hb
+msgid "Product Developers/ Internet Marketer make more sales when they can easily display their products with the buy links in the perfecter location. Easily use their products."
+msgstr "Здесь вы можете написать небольшую заметку, которая будет отображаться на главной странице"
+
+#: front-page.php:365
+#@ hb
+msgid "Contact Us"
+msgstr "Контакты"
+
+#: front-page.php:407
+#@ hb
+msgid "Latest Property Listing"
+msgstr "Свежий список недвижимости"
+
+#: functions/inkthemes-functions.php:30
+#@ hb
+msgid "Main Menu"
+msgstr "Главное меню"
+
+#: functions/inkthemes-functions.php:54
+#: functions/inkthemes-functions.php:56
+#@ hb
+msgid "Home"
+msgstr "Главная"
+
+#: functions/inkthemes-functions.php:145
+#@ hb
+msgid "Page"
+msgstr "Страница"
+
+#: functions/inkthemes-functions.php:206
+#, php-format
+#@ hb
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Запись опубликована в %1$s с метками %2$s. Читать <a href=\"%3$s\" title=\"%4$s\" rel=\"bookmark\">запись</a>."
+
+#: functions/inkthemes-functions.php:208
+#, php-format
+#@ hb
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Запись опубликована в %1$s."
+
+#: functions/inkthemes-functions.php:210
+#, php-format
+#@ hb
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Читать <a href=\"%3$s\" title=\"%4$s\" rel=\"bookmark\">запись</a>."
+
+#: functions/inkthemes-functions.php:241
+#@ hb
+msgid "Primary Widget Area"
+msgstr "Первый виджет"
+
+#: functions/inkthemes-functions.php:243
+#@ hb
+msgid "The primary widget area"
+msgstr "Первый виджет"
+
+#: functions/inkthemes-functions.php:251
+#@ hb
+msgid "Secondary Widget Area"
+msgstr "Второй виджет"
+
+#: functions/inkthemes-functions.php:253
+#@ hb
+msgid "The secondary widget area"
+msgstr "Второй виджет"
+
+#: functions/inkthemes-functions.php:261
+#@ hb
+msgid "First Footer Widget Area"
+msgstr "Первый виджет футера"
+
+#: functions/inkthemes-functions.php:263
+#@ hb
+msgid "The first footer widget area"
+msgstr "Первый виджет футера"
+
+#: functions/inkthemes-functions.php:271
+#@ hb
+msgid "Second Footer Widget Area"
+msgstr "Второй виджет футера"
+
+#: functions/inkthemes-functions.php:273
+#@ hb
+msgid "The second footer widget area"
+msgstr "Второй виджет футера"
+
+#: functions/inkthemes-functions.php:281
+#@ hb
+msgid "Third Footer Widget Area"
+msgstr "Третий виджет футера"
+
+#: functions/inkthemes-functions.php:283
+#@ hb
+msgid "The third footer widget area"
+msgstr "Третий виджет футера"
+
+#: functions/inkthemes-functions.php:291
+#@ hb
+msgid "Fourth Footer Widget Area"
+msgstr "Четвертый виджет футера"
+
+#: functions/inkthemes-functions.php:293
+#@ hb
+msgid "The fourth footer widget area"
+msgstr "Четвертый виджет футера"
+
+#: functions/metabox.php:8
+#@ hb
+msgid "Area"
+msgstr "Площадь"
+
+#: functions/metabox.php:9
+#@ hb
+msgid "Enter area of property"
+msgstr "Введите площадь недвижимости"
+
+#: functions/metabox.php:14
+#@ hb
+msgid "Enter numbers of bedrooms"
+msgstr "Введите кол-во спален"
+
+#: functions/metabox.php:18
+#@ hb
+msgid "Price"
+msgstr "Цена"
+
+#: functions/metabox.php:19
+#@ hb
+msgid "Enter price of property."
+msgstr "Введите цену на недвижимость"
+
+#: functions/metabox.php:23
+#@ hb
+msgid "City"
+msgstr "Город"
+
+#: functions/metabox.php:24
+#@ hb
+msgid "Enter your city."
+msgstr "Введите город"
+
+#: functions/metabox.php:28
+#@ hb
+msgid "Location"
+msgstr "Расположение"
+
+#: functions/metabox.php:29
+#@ hb
+msgid "Enter your property location"
+msgstr "Введите улицу недвижимости"
+
+#: functions/metabox.php:48
+#@ hb
+msgid "Property Meta"
+msgstr ""
+
+#: functions/metabox.php:71
+#@ figero
+msgid "Post is not yet published"
+msgstr ""
+
+#: header.php:28
+#, php-format
+#@ hb
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: search.php:15
+#, php-format
+#@ hb
+msgid "Search Results for: %s"
+msgstr "Поисковые результаты: %s"
+
+#: search.php:23
+#@ hb
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: search.php:29
+#@ hb
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "По вашему запросу ничего не найдено."
+
+#: sidebar-footer.php:13
+#@ hb
+msgid "Contact Deatiles"
+msgstr "Контакты"
+
+#: sidebar-footer.php:14
+#@ hb
+msgid ""
+"Address: FM-9, B-Block,  Second Complex, Bhopal<br/>\n"
+"            Contact No : +91-9826123456<br/>\n"
+"            Website:&nbsp;<a href=\"#\">http://inkthemes.com</a><br/>"
+msgstr "Введите свой адрес или дополнительные контакты"
+
+#: sidebar-footer.php:25
+#@ hb
+msgid "Buyers & Other Links"
+msgstr "Покупатели"
+
+#: sidebar-footer.php:26
+#@ hb
+msgid ""
+"\n"
+"                <li> <a href=\"#\">WordPress Blog</a></li>\n"
+"                <li> <a href=\"#\">Developer Documentation</a></li>\n"
+"                <li> <a href=\"#\">Reporting Bugs</a></li>\n"
+"                "
+msgstr "Список покупателей"
+
+#: sidebar-footer.php:40
+#@ hb
+msgid "Recent From Blog"
+msgstr "Последнее из блога"
+
+#: sidebar-footer.php:41
+#@ hb
+msgid "Qarius dui, quis posuere nibh ollis quis. Mauris omma rhoncus rttitor. <a href=\"http://www.inkthemes.com\">http://www.inkthemes.com</a> </p>"
+msgstr "Здесь какая-то запись"
+
+#: sidebar.php:3
+#@ real
+msgid "Search Property:"
+msgstr ""
+
+#: sidebar.php:6
+#@ hb
+msgid "Recent Listing"
+msgstr "Последнее из списка"
+
+#: sidebar.php:13
+#@ hb
+msgid "Archives"
+msgstr "Архив"
+
+#: single.php:29
+#@ hb
+msgid "BHK:"
+msgstr "Спальни:"
+
+#: tags.php:15
+#, php-format
+#@ hb
+msgid "Tag Archives: %s"
+msgstr "Архив метки: %s"
+

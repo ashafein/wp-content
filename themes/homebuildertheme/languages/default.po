@@ -1,0 +1,307 @@
+# Copyright (C) 2012 Home Builder Pro
+# This file is distributed under the same license as the WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Home Builder Pro 2.0\n"
+"Report-Msgid-Bugs-To: admin@inkthemes.comPOT-Creation-Date: 2012-03-16 01:47:23+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-03-22 12:30+0530\n"
+"Last-Translator: \n"
+"Language-Team: Inkthemes <admin@inkthemes.com>\n"
+"POT-Creation-Date: \n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: India\n"
+
+#: 404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: 404.php:17
+msgid "Most Used Categories"
+msgstr ""
+
+#: archive.php:25
+msgid "Blog Archives"
+msgstr ""
+
+#: blog-property.php:43
+#: front-page.php:440
+#: loop.php:27
+#: single.php:33
+msgid "Area:"
+msgstr ""
+
+#: blog-property.php:44
+#: front-page.php:441
+#: loop.php:28
+#: single.php:35
+msgid "Bed Room:"
+msgstr ""
+
+#: blog-property.php:45
+#: front-page.php:442
+#: loop.php:29
+#: metabox.php:13
+#: single.php:37
+msgid "Price:"
+msgstr ""
+
+#: blog-property.php:48
+#: front-page.php:445
+#: loop.php:32
+#: single.php:42
+msgid "City:"
+msgstr ""
+
+#: blog-property.php:49
+#: front-page.php:446
+#: loop.php:33
+#: single.php:44
+msgid "Location:"
+msgstr ""
+
+#: blog.php:81
+#: loop.php:52
+#: blog-property.php:57
+#: front-page.php:447
+#: loop.php:41
+#: single.php:61
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: search.php:23
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:29
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: sidebar.php:3
+msgid "Search Property:"
+msgstr ""
+
+#: sidebar.php:6
+msgid "Recent Listing"
+msgstr ""
+
+#: sidebar.php:13
+msgid "Archives"
+msgstr ""
+
+#: 404.php:35
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:19
+msgid "Daily Listings: %s"
+msgstr ""
+
+#: archive.php:21
+msgid "Monthly Listings: %s"
+msgstr ""
+
+#: archive.php:23
+msgid "Yearly Listings: %s"
+msgstr ""
+
+#: attachment.php:14
+msgid "Return to %s"
+msgstr ""
+
+#: attachment.php:17
+msgid "&larr;"
+msgstr ""
+
+#: attachment.php:21
+msgid "By %2$s"
+msgstr ""
+
+#: attachment.php:21
+msgid "View all posts by %s"
+msgstr ""
+
+#: attachment.php:27
+msgid "Published %2$s"
+msgstr ""
+
+#: attachment.php:33
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:33
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:38
+#: attachment.php:77
+msgid "Edit"
+msgstr ""
+
+#: attachment.php:74
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: attachment.php:75
+msgid "Pages:"
+msgstr ""
+
+#: author.php:13
+msgid "Property By Agents: %s"
+msgstr ""
+
+#: author.php:33
+msgid "About %s"
+msgstr ""
+
+#: author.php:54
+#: archive.php:46
+#: blog-property.php:64
+#: category.php:26
+#: index.php:23
+#: search.php:38
+#: tag.php:20
+msgid "&larr; Older posts"
+msgstr ""
+
+#: author.php:56
+#: archive.php:48
+#: blog-property.php:66
+#: category.php:28
+#: index.php:25
+#: search.php:40
+#: tag.php:22
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: category.php:13
+msgid "Property Listings: %s"
+msgstr ""
+
+#: search.php:15
+msgid "Search Results for: %s"
+msgstr ""
+
+#: header.php:28
+msgid "Page %s"
+msgstr ""
+
+#: tag.php:15
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: inkthemes-functions.php:30
+msgid "Main Menu"
+msgstr ""
+
+#: inkthemes-functions.php:54
+#: inkthemes-functions.php:56
+msgid "Home"
+msgstr ""
+
+#: inkthemes-functions.php:145
+msgid "Page"
+msgstr ""
+
+#: inkthemes-functions.php:216
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the permalink"
+msgstr ""
+
+#: inkthemes-functions.php:218
+msgid "This entry was posted in %1$s. Bookmark the permalink"
+msgstr ""
+
+#: inkthemes-functions.php:220
+msgid "Bookmark the permalink"
+msgstr ""
+
+#: inkthemes-functions.php:251
+msgid "Primary Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:253
+msgid "The primary widget area"
+msgstr ""
+
+#: inkthemes-functions.php:261
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:263
+msgid "The secondary widget area"
+msgstr ""
+
+#: inkthemes-functions.php:271
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:273
+msgid "The first footer widget area"
+msgstr ""
+
+#: inkthemes-functions.php:281
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:283
+msgid "The second footer widget area"
+msgstr ""
+
+#: inkthemes-functions.php:291
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:293
+msgid "The third footer widget area"
+msgstr ""
+
+#: inkthemes-functions.php:301
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: inkthemes-functions.php:303
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: metabox.php:8
+msgid "Area"
+msgstr ""
+
+#: metabox.php:9
+msgid "Enter area of property"
+msgstr ""
+
+#: metabox.php:14
+msgid "Enter numbers of bedrooms"
+msgstr ""
+
+#: metabox.php:18
+msgid "Price"
+msgstr ""
+
+#: metabox.php:19
+msgid "Enter price of property"
+msgstr ""
+
+#: metabox.php:23
+msgid "City"
+msgstr ""
+
+#: metabox.php:24
+msgid "Enter your city."
+msgstr ""
+
+#: metabox.php:28
+msgid "Location"
+msgstr ""
+
+#: metabox.php:29
+msgid "Enter your property location"
+msgstr ""
+
