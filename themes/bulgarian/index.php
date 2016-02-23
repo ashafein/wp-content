@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: vredian
- * Date: 22.02.2016
- * Time: 14:07
- */
+<?php // Template Name: Главная страница
+
+get_header(); ?>
+
+
+
+<?php get_footer();?>
