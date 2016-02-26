@@ -97,8 +97,20 @@ get_header(); ?>
                 $i++;
             }
             echo($item_region);
-            /* Restore original Post Data */
-            wp_reset_postdata();
+
+            <?php
+                $i=1;
+
+                query_posts(array('post_type'=>'region','posts_per_page' => '200','orderby' => 'post_title', 'order'   => 'ASC',));
+                if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
+                    $i++;
+                    ?>
+                    <?php $array = array( 'i' => $i ); // Этот масссив будет доступен в файле my_template.php
+
+                    include(locate_template('items-template-part/region-item.php')); ?>
+                <?php endwhile; // конец цикла
+                else: echo '<h2>Нет записей.</h2>'; endif;
+                wp_reset_postdata();
             ?>
 
         </div>

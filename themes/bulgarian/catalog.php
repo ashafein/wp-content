@@ -51,6 +51,5 @@ get_header(); ?>
     </div>
 </div>
 
-
-<?php get_template_part('contact-form-blue'); ?>
+<?php get_template_part('contact-form-part/contact-form-blue'); ?>
 <?php get_footer();?>

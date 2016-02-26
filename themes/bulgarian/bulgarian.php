@@ -20,7 +20,7 @@ get_header(); ?>
     <div class="row-fluid">
         <div class="span4 page-aside-left">
 
-            <?php get_template_part('contact-form-sidebar'); ?>
+            <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
             <div class="search-form">
                 <form class="form-inline orange-form">
@@ -73,5 +73,5 @@ get_header(); ?>
 </div>
 
 
-<?php get_template_part('contact-form-blue'); ?>
+<?php get_template_part('contact-form-part/contact-form-blue'); ?>
 <?php get_footer();?>

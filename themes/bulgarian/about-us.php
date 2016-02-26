@@ -69,30 +69,19 @@ get_header(); ?>
                     <h2 class="text-color-orange text-center text-uppercase">BulgariaDom предоставляет своим клиентам максимальный спектр услуг</h2>
 
                     <?php
-                    $i = 1;
-                    $query_descr = new WP_Query;
-                    $descriptions = $query_descr->query( array(
-                        'post_type' => 'company-descr',
-                        'orderby' => 'post_date',
-                        'order'   => 'ASC',
-                    ) );
+                    $i = 0;
 
-                    $item_descr = '';
-                    foreach( $descriptions as $descr ){
-                        $item_descr .= '<div class="text-color-blue service-item">';
-                            $item_descr .= '<div class="text-left">';
-                                $item_descr .= '<span class="text-center service-item-id">'.$i.'</span>';
-                                $item_descr .= '<div class="spacer-40"> </div>';
-                                $item_descr .= $descr->post_content;
-                            $item_descr .= '</div>';
-                        $item_descr .= '</div>';
-                        $i++;
-                    }
-                    echo($item_descr);
-                    /* Restore original Post Data */
+                    query_posts(array('post_type'=>'company-descr','posts_per_page' => '200'));
+                    if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
+                       $i++;
+                        ?>
+                        <?php $array = array( 'i' => $i ); // Этот масссив будет доступен в файле
+
+                        include(locate_template('items-template-part/company-descr-item.php')); ?>
+                    <?php endwhile; // конец цикла
+                    else: echo '<h2>Нет записей.</h2>'; endif;
                     wp_reset_postdata();
                     ?>
-
                 </div>
             </div>
 
@@ -142,5 +131,5 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<?php get_template_part('contact-form-blue'); ?>
+<?php get_template_part('contact-form-part/contact-form-blue'); ?>
 <?php get_footer();?>

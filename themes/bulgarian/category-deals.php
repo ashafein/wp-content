@@ -25,7 +25,7 @@ get_header(); ?>
                 query_posts($query_string.'&order=ASC&posts_per_page=10');
                 if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
                     ?>
-                    <?php get_template_part('deals-item'); // для отображения каждой записи берем шаблон category-item.php ?>
+                    <?php get_template_part('items-template-part/deals-item'); // для отображения каждой записи берем шаблон category-item.php ?>
                 <?php endwhile; // конец цикла
                 else: echo '<h2>Нет записей.</h2>'; endif; // если записей нет, напишем "простите" ?>
             </div>
@@ -33,7 +33,7 @@ get_header(); ?>
 
     </section>
 
-    <?php get_template_part('contact-form-grey'); ?>
+    <?php get_template_part('contact-form-part/contact-form-grey'); ?>
 </div>
 
 <?php get_footer();?>
