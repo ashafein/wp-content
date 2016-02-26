@@ -22,7 +22,7 @@ get_header(); ?>
     <div class="row-fluid">
         <div class="span4 page-aside-left">
 
-            <?php get_template_part('contact-form-sidebar'); ?>
+            <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
             <div class="search-form">
                 <form class="form-inline orange-form">
@@ -64,47 +64,13 @@ get_header(); ?>
 
         <div class="span8">
             <?php
-            $i=1;
-            $query_regions = new WP_Query;
-            $regions = $query_regions->query( array(
-                'post_type' => 'region',
-                'posts_per_page' => 200,
-                'orderby' => 'post_title',
-                'order'   => 'ASC',
-            ) );
-
-            $item_region = '';
-            foreach( $regions as $reg ){
-
-                if ($i & 1){
-                    $item_region .= '<div class="row-fluid region-item region-to-the-right">';
-                } else {
-                    $item_region .= '<div class="row-fluid region-item region-to-the-left">';
-                }
-                        $item_region .= ' <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 region-item-image">';
-                            $item_region .= get_the_post_thumbnail($reg->ID, 'medium');
-                        $item_region .= '</div>';
-
-                        $item_region .= '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-white region-item-content">';
-                            $item_region .= ' <h4>'.$reg->post_title.'</h4>';
-                            $item_region .= '<span>By '.get_the_author().' in Blog entry '.$reg->post_date. '</span>';
-                            $item_region .= '<p>'.$reg->post_content.'</p>';
-                            $item_region .= '<a href="'.get_permalink($reg->ID).'" class="region-item_link">Подробности</a>';
-                        $item_region .= '</div>';
-                        $item_region .= '<div class="clearfix"></div>';
-                $item_region .= '</div>';
-
-                $i++;
-            }
-            echo($item_region);
-
-            <?php
-                $i=1;
-
+                $i = 1;
+                $html = '';
                 query_posts(array('post_type'=>'region','posts_per_page' => '200','orderby' => 'post_title', 'order'   => 'ASC',));
                 if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
-                    $i++;
-                    ?>
+
+                $i++;
+            ?>
                     <?php $array = array( 'i' => $i ); // Этот масссив будет доступен в файле my_template.php
 
                     include(locate_template('items-template-part/region-item.php')); ?>
@@ -120,5 +86,5 @@ get_header(); ?>
 
 
 </div>
-<?php get_template_part('contact-form-blue'); ?>
+<?php get_template_part('contact-form-part/contact-form-blue'); ?>
 <?php get_footer();?>
