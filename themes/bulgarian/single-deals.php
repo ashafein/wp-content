@@ -28,7 +28,7 @@ get_header(); ?>
 
             <div class="span4 page-aside-right">
 
-                <?php get_template_part('contact-form-sidebar'); ?>
+                <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
                 <div class="search-form">
                     <form class="form-inline orange-form">
@@ -70,7 +70,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <?php get_template_part('contact-form-white'); ?>
+        <?php get_template_part('contact-form-part/contact-form-white'); ?>
     </div>
 
 </div>
