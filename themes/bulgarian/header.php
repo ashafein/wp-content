@@ -14,10 +14,10 @@
     <?php wp_head(); ?>
     <?php wp_head(); ?>
     <![if IE]>
-    <link href="css/all-ie-only.css" rel="stylesheet">
+    <link href="<?php echo(get_stylesheet_directory_uri().'/css/all-ie-only.css'); ?>" rel="stylesheet">
     <![endif]>
     <!--[if IE]>
-    <link href="css/all-ie-only.css" rel="stylesheet">
+    <link href="<?php echo(get_stylesheet_directory_uri().'/css/all-ie-only.css'); ?>" rel="stylesheet">
     <![endif]-->
 </head>
 <body <?php body_class();?>>
