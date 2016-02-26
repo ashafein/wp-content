@@ -15,13 +15,13 @@
                 <div class="footer-contacts">
                     <div class="text-left header-contacts">
                         <div class="header-phone">
-                            <i class="fa fa-phone fa-lg text-color-white"></i>+38(067) 111 59 89
+                            <i class="fa fa-phone fa-lg text-color-white"></i><?php echo(types_render_usermeta_field( "header_phone",array())); ?>
                         </div>
                         <div  class="header-mail">
-                            <i class="fa fa-envelope-o  fa-lg text-color-white"></i>bulgarian@gmail.com
+                            <i class="fa fa-envelope-o  fa-lg text-color-white"></i><?php echo(types_render_usermeta_field( "header_email",array())); ?>
                         </div>
                         <div class="header-callback">
-                            <i class="fa fa-skype  fa-lg text-color-white"></i>BulgarianRealty
+                            <i class="fa fa-skype  fa-lg text-color-white"></i><?php echo(types_render_usermeta_field( "header_skype",array())); ?>
                         </div>
                     </div>
                 </div>

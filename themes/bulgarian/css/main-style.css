@@ -182,6 +182,10 @@ padding: 15px 20px 15px 20px;
     text-transform: uppercase;
 }
 
+footer .header-contacts .header-mail a, footer .header-contacts .header-mail a:hover{
+    color: #fff;
+}
+
 .header-contacts .header-callback {
     font-weight: 700;
     text-decoration: underline;
@@ -492,13 +496,15 @@ h2.home-page-h2 {
 
 /* Pagination */
 
-.content-pagination a, .content-pagination a:hover{
+.content-pagination a, .content-pagination a:hover,.content-pagination span.current{
     text-decoration: none;
     color: #000;
     padding: 3px 9px;
     background-color: #ddd;
     font-size: 15px;
     font-family: 'PT Sans', sans-serif;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .content-pagination a:hover{
@@ -506,7 +512,7 @@ h2.home-page-h2 {
     color: #fff;
 }
 
-.content-pagination a.active{
+.content-pagination span.current{
     background-color: #15496b;
     color: #fff;
 }
@@ -869,10 +875,22 @@ h2.home-page-h2 {
     display: inline-block;
 }
 
-.free-service-right button.button-transparent{
+.free-service-right input.button-transparent{
     text-transform: none;
     padding: 5px 15px;
     background-color: transparent;
+    width: auto;
+    color: #fff;
+    margin-right:0 ;
+    margin-bottom: 0;
+}
+.free-service-right .form-group span.wpcf7-not-valid-tip{
+    display: none;
+}
+
+#conditions-error{
+    color:red;
+    display: none;
 }
 
 .free-service-left, .free-service-right {
@@ -1308,7 +1326,7 @@ h3.product-header{
     margin-bottom: 10px;
 }
 
-.article-item .article-descr{
+.article-item .article-descr p, .article-item .article-descr{
     font-size: 14px;
     color: #000;
     height: 60px;
@@ -1320,6 +1338,11 @@ h3.product-header{
     padding: 3px;
     border: 1px #000 solid;
     background-color: #e6e6e6;
+}
+
+.article-item .article-image img {
+    width: 277px !important;
+    height: 205px !important;
 }
 
 .article-item .article-button-blue{
@@ -1395,6 +1418,17 @@ h3.product-header{
     background-color: #e6e6e6;
     border: 0;
     width: 80%;
+}
+
+@media(max-width: 1200px){
+    .little-subscribe-form .form-inline .form-control {
+        width:100%;
+    }
+}
+@media(min-width: 768px){
+    .little-subscribe-form .form-inline .form-control {
+        width:100%;
+    }
 }
 
 .little-subscribe-form .blue-button{
@@ -1555,6 +1589,9 @@ h3.product-header{
     padding-left: 20px;
 }
 
+.sails-offers .row-fluid :first-child.col-lg-4{
+    padding-left: 0px;
+}
 
 .sails-offers{
     padding-bottom: 30px;
@@ -1578,11 +1615,14 @@ h3.product-header{
 }
 
 .sail-offer-item div{
-    padding-top: 215px;
-
     height: 265px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.sail-offer-item div img{
+    width:391px;
+    height: 215px;
 }
 
 .sail-offer-item a,
@@ -1695,7 +1735,7 @@ p.aside-specialist-top-text{
     overflow: hidden;
 }
 
-.region-item a{
+.region-item .region-item_link{
     text-transform: uppercase;
     border: 1px #000 solid;
     background-color: #fff;
@@ -1706,7 +1746,7 @@ p.aside-specialist-top-text{
     display: inline-block;
 }
 
-.region-item a:hover{
+.region-item .region-item_link:hover{
     background-color: #14486b;
     color:#fff;
     text-decoration: none;
@@ -1835,6 +1875,8 @@ p.aside-specialist-top-text{
     border: 1px #000 solid;
     padding: 2px;
     background-color: #e6e6e6;
+    max-width: 345px!important;
+    max-height: 242px;
 }
 
 .city-item a{
@@ -1942,6 +1984,20 @@ p.aside-specialist-top-text{
     padding-right: 5px;
 }
 
+.about-us-contact-form .wpcf7-quiz-label{
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 5px;
+    width: 30%;
+    display: inline-block;
+}
+.about-us-contact-form .wpcf7-form-control.wpcf7-quiz{
+    width: 61%;
+    display: inline-block;
+}
 .about-us-contact-form p{
     font-weight: 400;
     font-size: 14px;
@@ -1954,6 +2010,7 @@ p.aside-specialist-top-text{
 
 .about-us-contact-form .capcha{
     margin-top: 40px;
+    margin-right: 0;
 }
 
 .about-us-contact-form .blue-button{
@@ -1982,7 +2039,7 @@ p.aside-specialist-top-text{
     display: inline-block;
     width: 43px;
     height: 54px;
-    padding: 14px 0 0 14px;
+    padding: 14px 0 0 0px;
 }
 
 .service-item {
@@ -2072,5 +2129,9 @@ p.aside-specialist-top-text{
 .about-us-bottom .orange-button.button-single-orange span{
     vertical-align: super;
     display: inline-block;
+}
+
+.text-color-orange.text-underline a{
+    color:#fd8843;
 }
 /*END  About us */

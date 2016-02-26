@@ -11,6 +11,8 @@ $('.realty-head').popover({
 });
 
 
+
+
 /* Including lightslider */
 
 $(document).ready(function() {
