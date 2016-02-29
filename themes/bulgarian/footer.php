@@ -3,7 +3,8 @@
 <?php wp_footer(); ?>
 
 
-<a class="question"> Задать вопрос</a>
+
+<a href="<?php echo($GLOBALS['bulg']['deals_link']); ?>" class="question"> Задать вопрос</a>
 <footer>
     <div class="text-color-white container-fluid">
         <div class="row-fluid">

@@ -49,8 +49,8 @@
         ?>
 
 
-        <?php echo do_shortcode('[contact-form-7 id="94"  html_class="blue-form"]'); ?>
-        <?php //echo do_shortcode('[contact-form-7 id="36" html_class="blue-form"]'); ?>
+        <?php //echo do_shortcode('[contact-form-7 id="94"  html_class="blue-form"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="36" html_class="blue-form"]'); ?>
     </div>
 
 </div>

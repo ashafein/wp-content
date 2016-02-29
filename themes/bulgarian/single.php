@@ -26,32 +26,7 @@ get_header(); ?>
 
                 <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
-                <div class="search-form">
-                    <form class="form-inline orange-form">
-                        <div class="form-group">
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-                            <input  type="text" class="form-control"  placeholder="Номер лота">
-
-                        </div>
-                        <button type="submit" class="btn orange-button">Начать поиск</button>
-                    </form>
-                </div>
+                <?php get_template_part('search-vertical'); ?>
 
                 <div class="color-white little-subscribe-form">
                     <form class="form-inline blue-form">

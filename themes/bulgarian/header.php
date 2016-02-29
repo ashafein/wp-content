@@ -13,14 +13,14 @@
 
     <?php wp_head(); ?>
     <?php wp_head(); ?>
-    <![if IE]>
-    <link href="<?php echo(get_stylesheet_directory_uri().'/css/all-ie-only.css'); ?>" rel="stylesheet">
-    <![endif]>
+    <![if IE]><link href="<?php echo(get_stylesheet_directory_uri().'/css/all-ie-only.css'); ?>" rel="stylesheet"><![endif]>
     <!--[if IE]>
     <link href="<?php echo(get_stylesheet_directory_uri().'/css/all-ie-only.css'); ?>" rel="stylesheet">
     <![endif]-->
 </head>
 <body <?php body_class();?>>
+
+
 
 <header class="color-white">
     <div class="container-fluid" >
@@ -53,6 +53,7 @@
                 wp_nav_menu( $args );
 
                 ?>
+
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  text-right header-contacts">
@@ -63,7 +64,7 @@
                     <i class="fa fa-envelope-o text-color-blue"></i><?php echo(types_render_usermeta_field( "header_email",array())); ?>
                 </div>
                 <div class="header-callback">
-                    <a  href="#"><i class="fa fa-skype text-color-blue"></i>Заказать звонок</a>
+                    <a  href="<?php echo($GLOBALS['bulg']['deals_link']); ?>"><i class="fa fa-skype text-color-blue"></i>Заказать звонок</a>
                 </div>
             </div>
         </div>

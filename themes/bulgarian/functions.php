@@ -19,10 +19,28 @@ function bulgarian_theme_header_style() {
 }
 add_action( 'wp_head', 'bulgarian_theme_header_style' );
 
+
 function true_style_backend() {
     wp_enqueue_style( 'true_style', get_stylesheet_directory_uri() . '/assets/css/admin-style.css' );
 }
 add_action( 'admin_enqueue_scripts', 'true_style_backend' );
+
+
+function bulgaria_global_vars() {
+
+    $category = get_category_by_slug( 'deals' );
+    $category_id = $category->term_id;
+    global $bulg;
+    $bulg = array(
+
+        'deals_link'  => get_category_link( $category_id ),
+    );
+
+}
+
+
+add_action( 'parse_query', 'bulgaria_global_vars' );
+
 
 // Optimization CMS
 remove_action('wp_head','feed_links_extra', 3); // ссылки на дополнительные rss категорий

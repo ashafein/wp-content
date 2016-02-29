@@ -77,6 +77,10 @@ h1, h2 {
     margin-left:0 ;
 }
 
+.catalog-page{
+    min-height: 900px;
+}
+
 .deals-page .free-service .free-service-wrap{
     max-width: 1270px ;
     padding-left: 15px;
@@ -409,6 +413,10 @@ h2.home-page-h2 {
 .realty-item img{
     width:100%;
     max-height: 214px;
+    height: 214px;
+}
+
+.other-realty .realty-item img{
     height: 214px;
 }
 
@@ -1184,7 +1192,7 @@ h3.product-header{
 
 /* Realty-item carousel */
 .other-realty li{
-    height:300px;
+
 }
 
 
@@ -2137,3 +2145,13 @@ p.aside-specialist-top-text{
     color:#fd8843;
 }
 /*END  About us */
+
+.blue-head a{
+    padding: 20px;
+    display: inline-block;
+    background-color: #14486b;
+    width: 400px;
+    margin: 40px 0 20px 0;
+    color: #fff;
+    border: 3px #e6e6e6 solid;
+}

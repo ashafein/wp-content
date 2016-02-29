@@ -27,32 +27,7 @@ get_header(); ?>
 
                 <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
-                <div class="search-form">
-                    <form class="form-inline orange-form">
-                        <div class="form-group">
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-
-                            <select class="selectpicker">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-                            <input  type="text" class="form-control"  placeholder="Номер лота">
-
-                        </div>
-                        <button type="submit" class="btn orange-button">Начать поиск</button>
-                    </form>
-                </div>
+                <?php get_template_part('search-vertical'); ?>
 
                 <div class="color-white little-subscribe-form">
                     <form class="form-inline blue-form">
@@ -75,6 +50,7 @@ get_header(); ?>
                     $child_posts = types_child_posts('city');
 
                     foreach( $child_posts as $city ) {
+
                         $item_city .= '<div class="color-white text-left city-item">';
                             $item_city .= '<h3 class="text-color-blue">'.$city->post_title.'</h3>';
                             $item_city .= '<p>';
@@ -82,7 +58,7 @@ get_header(); ?>
                             $item_city .= $city->post_content.'</p>';
                             $item_city .= '<div class="clearfix"></div>';
                             $item_city .= '<div class="text-center button-wrapper">';
-                            $item_city .= '<a class="btn orange-button button-single-orange">Начать поиск недвижимости в '.$city->post_title.'</a>';
+                            $item_city .= '<a href="'.$city->guid.'" class="btn orange-button button-single-orange">Начать поиск недвижимости в '.$city->post_title.'</a>';
                             $item_city .= '</div>';
                         $item_city .= '</div>';
                     }

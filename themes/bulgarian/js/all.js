@@ -14,17 +14,19 @@ $(document).ready(function() {
         gallery:true,
         item:1,
         loop:true,
+        auto:true,
         thumbItem:4,
         slideMargin:10,
-        controls: false,
-        enableDrag: false,
-        currentPagerPosition:'center',
+        controls: true,
+        enableDrag: true,
+
         onSliderLoad: function(el) {
             el.lightGallery({
                 selector: '#productGallery .lslide'
             });
         }
     });
+
     $('.realty-head').popover({
         trigger: 'hover',
         animation: 'show',

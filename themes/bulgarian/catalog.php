@@ -6,33 +6,8 @@ get_header(); ?>
     <?php get_template_part('header-slider'); ?>
 
     <div class="container-fluid">
-        <div class="search-form">
-            <form class="form-inline orange-form">
-                <div class="form-group">
-                    <select class="selectpicker">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
 
-                    <select class="selectpicker">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
-
-                    <select class="selectpicker">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
-
-                    <input  type="text" class="form-control"  placeholder="Номер лота">
-
-                </div>
-                <button type="submit" class="btn orange-button">Начать поиск</button>
-            </form>
-        </div>
+        <?php get_template_part('search-horizontal'); ?>
 
 
         <div class="container-fluid color-white catalog-content">

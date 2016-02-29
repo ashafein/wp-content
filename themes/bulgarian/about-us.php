@@ -126,7 +126,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="button-wrapper text-center">
-                <a class="btn orange-button button-single-orange"><i class="fa fa-phone fa-2x text-color-white hidden-xs "></i><span>Заказать бесплатный звонок специалиста из болгарии</span></a>
+                <a href="<?php echo($GLOBALS['bulg']['deals_link']); ?>" class="btn orange-button button-single-orange"><i class="fa fa-phone fa-2x text-color-white hidden-xs "></i><span>Заказать бесплатный звонок специалиста из болгарии</span></a>
             </div>
         </div>
     </div>

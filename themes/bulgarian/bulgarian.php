@@ -1,7 +1,7 @@
 <?php // Template Name: О Болгарии
 get_header(); ?>
 
-<div class="color-grey regions-page sidebar-page sidebar-left"">
+<div class="color-white regions-page sidebar-page sidebar-left"">
 
 <?php get_template_part('header-slider'); ?>
 
@@ -22,32 +22,7 @@ get_header(); ?>
 
             <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
-            <div class="search-form">
-                <form class="form-inline orange-form">
-                    <div class="form-group">
-                        <select class="selectpicker">
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                        </select>
-
-                        <select class="selectpicker">
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                        </select>
-
-                        <select class="selectpicker">
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                        </select>
-                        <input  type="text" class="form-control"  placeholder="Номер лота">
-
-                    </div>
-                    <button type="submit" class="btn orange-button">Начать поиск</button>
-                </form>
-            </div>
+            <?php get_template_part('search-vertical'); ?>
 
             <div class="color-white little-subscribe-form">
                 <form class="form-inline blue-form">
@@ -61,11 +36,28 @@ get_header(); ?>
         </div>
 
         <div class="span8">
-            <?php $page = get_page_by_title( 'Регионы Болгарии' ); ?>
-            <a href="<?php echo($page->guid); ?>">Регионы Болгарии</a>
-            <a href="">Полезно знать</a>
 
+            <h2><?php echo the_title() ?> </h2>
+            <div class="spacer-20"></div>
+            <div>
+                <?php echo the_content() ?>
+            </div>
 
+            <div>
+                <?php $page = get_page_by_title( 'Регионы Болгарии' ); ?>
+                <h3 class="additional-links text-center blue-head "><a href="<?php echo($page->guid); ?>">Регионы Болгарии</a></h3>
+                <?php
+                $category = get_category_by_slug( 'articles' );
+                $category_id = $category->term_id;
+                ?>
+                <h3 class="additional-links text-center blue-head"><a href="<?php echo(get_category_link( $category_id )); ?>">Статьи о Болгарии</a></h3>
+                <?php
+                $category = get_category_by_slug( 'learning' );
+                $category_id = $category->term_id;
+                ?>
+                <h3 class="additional-links text-center blue-head"><a  href="<?php echo(get_category_link( $category_id )); ?>">Полезно знать</a></h3>
+                <div class="clearfix"></div>
+            </div>
         </div>
 
     </div>
