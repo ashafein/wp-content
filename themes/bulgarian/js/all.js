@@ -34,4 +34,5 @@ $(document).ready(function() {
         html: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>'
 
     });
+
 });

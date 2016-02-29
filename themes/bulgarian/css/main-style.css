@@ -1245,6 +1245,11 @@ h3.product-header{
     padding-bottom: 45px;
 }
 
+.specoffer a,.specoffer a :hover{
+    color: #fff;
+    text-decoration: none;
+}
+
 .specoffer h4{
     font-size: 22px;
     margin: 0;
@@ -2154,4 +2159,60 @@ p.aside-specialist-top-text{
     margin: 40px 0 20px 0;
     color: #fff;
     border: 3px #e6e6e6 solid;
+}
+
+ .blue-head a:hover{
+     background-color: #052c46;
+ }
+
+.learning-top{
+    background-color: #14486b;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.learning-top h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.learning-top p{
+    margin-top: 30px;
+}
+
+.learning-top hr{
+    width: 40px;
+    margin-top: 10px;
+}
+
+.learning-item a{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b0b0b0;
+}
+
+.learning-item h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.learning-item{
+    margin-bottom: 40px;
+}
+
+.learning-item :hover, .learning-item a :hover{
+    color:#14486b;
+    text-decoration: none;
+}
+
+.learning-item-image{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    margin: 0 auto;
 }

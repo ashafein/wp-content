@@ -181,5 +181,6 @@ get_header(); ?>
         </form>
     </div>
 </section>
+
 <?php get_template_part('contact-form-part/contact-form-blue'); ?>
 <?php get_footer();?>

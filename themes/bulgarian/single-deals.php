@@ -44,7 +44,7 @@ get_header(); ?>
 
             </div>
         </div>
-
+        <?php get_template_part('banner'); ?>
         <?php get_template_part('contact-form-part/contact-form-white'); ?>
     </div>
 
