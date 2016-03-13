@@ -1,5 +1,5 @@
 <div class="realty-item">
-    <div class="realty-picture">
+    <div class="item-zoom realty-picture">
         <?php if ( has_post_thumbnail() )
         {
             the_post_thumbnail('medium');

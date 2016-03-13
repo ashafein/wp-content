@@ -5,7 +5,7 @@
     echo('<div class="row-fluid region-item region-to-the-left">');
         }
 ?>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 region-item-image">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 item-zoom region-item-image">
         <?php if ( has_post_thumbnail() ) the_post_thumbnail('medium'); // выводим миниатюру поста, если есть ?>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left color-white region-item-content">

@@ -46,7 +46,9 @@ get_header(); ?>
                         $item_city .= '<div class="color-white text-left city-item">';
                             $item_city .= '<h3 class="text-color-blue">'.$city->post_title.'</h3>';
                             $item_city .= '<p>';
+                            $item_city .= '<span class="item-zoom">';
                                 $item_city .= get_the_post_thumbnail($reg->ID, 'large');
+                            $item_city .= '</span>';
                             $item_city .= $city->post_content.'</p>';
                             $item_city .= '<div class="clearfix"></div>';
                             $item_city .= '<div class="text-center button-wrapper">';

@@ -1,5 +1,5 @@
 <div class="home-news-item">
-    <div class="home-news-item-pict">        <?php if ( has_post_thumbnail() )
+    <div class=" item-zoom home-news-item-pict">        <?php if ( has_post_thumbnail() )
         {
             the_post_thumbnail('medium');
         }else{

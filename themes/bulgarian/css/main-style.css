@@ -469,6 +469,7 @@ h2.home-page-h2 {
     width:100%;
     max-height: 214px;
     height: 214px;
+    overflow: hidden;
 }
 
 .other-realty .realty-item img{
@@ -2301,4 +2302,39 @@ p.aside-specialist-top-text{
     color: #fff;
     margin-top: 20px;
     margin-right: 20px;
+}
+
+span.item-zoom{
+    display: inline-block;
+    float: right;
+    border-radius: 5px;
+}
+
+.item-zoom{
+    overflow: hidden;
+
+
+}
+
+.item-zoom img{
+
+    /* HOVER OFF */
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.item-zoom img:hover {
+    /* HOVER ON */
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: transform 1.2s ease-in-out;
+    -moz-transition:transform 1.2s ease-in-out;
+    -ms-transition:transform 1.2s ease-in-out;
 }

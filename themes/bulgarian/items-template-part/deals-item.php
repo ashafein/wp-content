@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="sail-offer-item">
-        <div class="flag">
+        <div class=" item-zoom flag">
             <?php if ( has_post_thumbnail() )
             {
                 the_post_thumbnail('medium');

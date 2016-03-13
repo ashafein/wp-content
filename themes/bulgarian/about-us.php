@@ -19,7 +19,7 @@ get_header(); ?>
 
                 <div class="about-us-top">
                     <div class="row-fluid">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item-zoom text-left">
                             <?php
                             echo(types_render_usermeta_field( "about-us-img", array( "alt" => "BulgarianDom",
                                 "user_name" => "admin" ) ));

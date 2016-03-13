@@ -1,5 +1,5 @@
 <div class="color-white text-left row-fluid article-item">
-    <div class="article-image">
+    <div class="item-zoom article-image">
         <?php if ( has_post_thumbnail() )
         {
             the_post_thumbnail('medium');
