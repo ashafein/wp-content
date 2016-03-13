@@ -15,7 +15,7 @@ class es_cls_widget
 		}
 
 		$es = $es . "<div>";
-		
+
 		if( $es_desc <> "" ) { 
 			$es = $es . '<div class="es_caption">'.$es_desc.'</div>';
 		} 

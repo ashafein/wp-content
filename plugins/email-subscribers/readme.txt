@@ -1,25 +1,37 @@
 === Email Subscribers ===
-Contributors: storeapps
+Contributors: storeapps, niravmehta, Mansi Shah
 Donate link: http://www.storeapps.org/
 Author URI: http://www.storeapps.org/
 Plugin URI: http://www.storeapps.org/
 Tags: email, email sign-up, email marketing, email newsletter form, email signup, email widget, email newsletter, newsletter, newsletter form, newsletter marketing, newsletter plugin, newsletter sending, newsletter signup, newsletter widget, subscribe, subscribers, subscribe form, subscription, subscription form, subscription, plugin, send, sendmail, marketing, registration form, bulk, feedburner, form, iscrizione, list, mailup, signup, smtp, widget
 Requires at least: 3.4
 Tested up to: 4.4.2
-Stable tag: 3.1
+Stable tag: 3.1.1
 License: GPLv3
 
-Easily add a subscription form to your website or blog, then send HTML newsletters to subscribers. You can also send notification emails to subscribers when a new post is published automatically.
+Add subscription form on website,send HTML newsletters to subscribers & automatically notify them about new blog posts once it gets published.
 
 == Description ==
 
-Email Subscriber is a fully featured newsletter plugin. It helps you achieve all your newsletter related tasks effectively in one single place.
+Email Subscribers is a fully featured newsletter plugin. It helps you achieve all your newsletter related tasks effectively in one single place.
 
-Email Subscriber plugin has a separate page with the HTML editor. You can easily create HTML newsletters using this editor in around 5 minutes. You also have a separate page to select the include and exclude categories before sending each newsletter. You can quickly import/ export email addresses of registered users and commentators to the subscription list using the import-export option in the plugin.
+Email Subscribers plugin has a separate page with the HTML editor. You can easily create HTML newsletters using this editor in around 5 minutes. You also have a separate page to select the include and exclude categories before sending each newsletter. You can quickly import/ export email addresses of registered users and commentators to the subscription list using the import-export option in the plugin.
 
-This plugin also has a subscription box and it allows users to publicly subscribe by submitting their email addresses. You can add the subscription box to your sidebar (use widget), posts (use shortcode) and theme file (use php code).
+Email Subscribers plugin also has a subscription box and it allows users to publicly subscribe by submitting their email addresses. You can add the subscription box to your site using
 
-### Main advantage
+*   Shortcode for any posts or pages
+
+`[email-subscribers namefield="YES" desc="" group="Public"]`
+
+*   Widget option
+
+Go to Dashboard->Appearance->Widgets. Drag and drop the Email Subscribers widget to your sidebar location.
+
+*   Add directly in the theme
+
+`<?php es_subbox( $namefield = "YES", $desc = "", $group = "" ); ?>`
+
+### Main advantages
 
 1. Easily **collect emails by adding a subscription form** to your sidebar (using widget), post (using shortcode) or theme file (using php code)
 2. **Send beautifully crafted HTML newsletters** and send them to your subscribers. Either manually (or schedule it)
@@ -35,7 +47,7 @@ This plugin also has a subscription box and it allows users to publicly subscrib
 *   **Email notification** to admin when user **signs up** (Optional).
 *   **Automatic welcome mail** to subscribers (Optional).
 *   **Unsubscribe link** in the mail.
-*   **Import/Export subscriber emails**.
+*   **Import/Export subscribers emails**.
 *   **HTML editor** to compose newsletters.
 *   Send newsletters.
 *   **Alphabetized list** in send mail page.
@@ -44,7 +56,12 @@ This plugin also has a subscription box and it allows users to publicly subscrib
 *   **Include/exclude categories** while sending a newsletter.
 *   **Ability to control user access** (Roles and Capabilities).
 
-Read what clients have to say:
+### Use Email Subscribers with it's Free Addon
+
+Use Email Subscribers with it's free Addon - [Email Subscribers Advanced Form](https://wordpress.org/plugins/email-subscribers-advanced-form/).
+It will extend Email Subscribers Form functionality by providing an option to your users to select interested group in the Subscribers Form.
+
+### Read what clients have to say:
 
 > As many of my subscribers won't be too technical with computers, or use facebook/twitter etc., I was looking for a plug in that would be easy to use from a subscribers point of view. This works very well - the subscriber doesn't have to mess about with member settings and completing a profile etc, or have to opt out of categories, tags and such...they only have to enter their name and email address in a widget or page where the shortcode has been placed, then later click a link in a confirmatory email, and they're all set up to receive new posts updates. SIMPLE and effective. Well done to the developer, this is great as it's flexible and easy for the webmaster to set up and customise, but more importantly it's end user friendly.
 > - [RegTheDonk](https://wordpress.org/support/topic/nice-1139)
@@ -59,17 +76,22 @@ And one more:
 > This works very well indeed... It does all the necessary things for a newsletter/email list(s)... It is simple, clean, easy to engage, and looks good... I was also easily able to do some styling on the input forms by adding its widget css into my child's style.css file and add and/or change some properties and values... Thanks much for making this available and staying on top of it... :-)
 > - [crzyhrse](https://wordpress.org/support/topic/very-well-indeed)
 
+### Help Fellow WordPressers by Writing a Review
+
+If you like Email Subscribers, please leave a **five star** review on WordPress. That helps fellow website owners assess Email Subscribers easily and benefit from it!
+
 ### Translators
 
-* English (en_EN)
 * Turkish (tr_TR) - Dr Abdullah Manaz
 * Tamil (ta) - Gopi Ramasamy
 * Dutch (nl_NL) - John van Halderen
 * Dutch (nl_NL_2) - Paul't Hoen
 * Serbian (sr_RS) - Ogi Djuraskovic
-* German (de_DE) - Stefanie Drucker
+* German (de_DE) - Stefanie Drucker, Vineet Talwar
 * Russian (ru_RU) - everyonesdesign
 * Polish (pl) - Abdul Sattar
+
+**Note**: Translations of above language files are not updated w.r.t Email Subscribers version 3.1. If you have updated translation files of the same language, then please write to us from [here](http://www.storeapps.org/support/contact-us/).
 
 == Installation ==
 
@@ -98,27 +120,54 @@ Option 3:
 
 == Frequently Asked Questions ==
 
-*   Q1. What are all the steps to do after plugin activation?
-*   Q2. How to setup subscription box widget?
-*   Q3. How to import and export email address to subscriber list?
-*   Q4. How to compose static newsletter?
-*   Q5. How to add subscription box in posts?
-*   Q6. How to modify Opt-in mail, Welcome mail, Admin mail contents?
-*   Q7. How to send static newsletter manually?
-*   Q8. Where to check sent mails?
-*   Q9. How to configure notification email to subscribers when new posts are published?
-*   Q10. How to update default alert message from subscription box?
-*   Q11. How to add new subscribers group?
-*   Q12. Is plugin contain bulk update option for subscribers group?
-*   Q13. Is Mail not working on Email Subscribers wordpress plugin?
-*   Q14. How to install and activate Email Subscribers on multisite installation blogs?
-*   Q14. How to assign user roles to plugin menu?
-*   Q15. How to schedule auto mails (Cron mails)?
-*   Q16. How to schedule auto emails for Email subscribers wordpress plugin in cPanel?
-*   Q17. How to schedule auto emails for Email subscribers wordpress plugin in Parallels Plesk?
-*   Q18. How to add Group Selection in front end subscription box?
+### Email Notifications are not being received by Subscribers?
 
-FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/](http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-plugin/)
+Make sure you are using latest version of Email subscribers. Then please confirm that you have followed all the steps from here : [Configure notification email to subscribers when new posts are published](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-notifications-settings/). You can also ask your Subscriber's to check in your SPAM/JUNK folder as emails might be ending up there.
+Also check that the new post that you are publishing, that category is checked under the Notification tab. Because if that category is not checked, then post published to that category won't be send to subscribers.
+
+Sometimes, there is a delay of sending emails from the server due to excess number of emails being send. Have a check with your Host Provider if the emails are being send by checking in email log file or if the emails are getting bounced back or if your host provider has not blocked email domains to whom you are sending notifications.
+If your Host Provider is blocking your emails, then try sending emails in Plain Text format instead of HTML format and then check.
+If your Host Provider is not blocking your emails and you are getting a email send notice & a record of it in email log file, then there is a possibility that your Subscriber's Host Provider is blocking the emails.
+
+Also, just for testing, create one sample notification and try sending it to 1 or 2 subscribers (including yourself) and then check if you are receiving the emails or not.
+
+If you are sending emails using Cron, then in Cron, initially you can send only 50 emails per hour and this value can be changed from WordPress -> Email Subscribers -> Cron Mail -> Cron Count.
+
+### How to update default alert message from subscription box?
+
+Use any translation plugin (eg: **Loco Translate**) and translate the text that you want to update.
+
+* [What are all the steps to do after plugin activation?](http://www.gopiplus.com/work/2014/05/07/email-subscribers-wordpress-plugin-how-to-install-and-errors-fix/)
+
+* [Setup subscription box widget](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-subscription-box/)
+
+* [Import and export email address to subscribers list](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-subscriber-management-and-import-and-export-email-address/)
+
+* [How to compose static newsletters?](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-compose-html-emails/)
+
+* [Modify Opt-in mail, Welcome mail, Admin mail contents](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-general-settings/)
+
+* [How to send static newsletter manually?](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-send-email-newsletters/)
+
+* [Where to check sent mails?](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-send-email-newsletters/)
+
+* [Configure notification email to subscribers when new posts are published](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-notifications-settings/)
+
+* [How to add new subscribers group?](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-subscriber-management-and-import-and-export-email-address/)
+
+* [Does plugin contain bulk update option for subscribers group?](http://www.gopiplus.com/work/2014/05/06/email-subscribers-wordpress-plugin-subscriber-management-and-import-and-export-email-address/)
+
+* [Is Mail not working on Email Subscribers wordpress plugin?](http://www.gopiplus.com/work/2014/08/17/mail-not-working-on-email-subscribers-wordpress-plugin/)
+
+* [How to install and activate Email Subscribers on multisite installation blogs?](http://www.gopiplus.com/work/2014/08/31/email-subscribers-wordpress-plugin-network-activation-for-multisite-installation/)
+
+* [Schedule auto mails/Cron mails](http://www.gopiplus.com/work/2015/08/08/email-subscribers-wordpress-plugin-how-to-schedule-auto-mails-cron-mails/)
+
+* [Schedule auto emails for Email Subscribers in cPanel](http://www.gopiplus.com/work/2015/08/04/how-to-schedule-auto-emails-for-email-subscribers-wordpress-plugin-in-cpanel/)?
+
+* [Schedule auto emails for Email Subscribers in Parallels Plesk](http://www.gopiplus.com/work/2015/08/02/how-to-schedule-auto-emails-for-email-subscribers-wordpress-plugin-in-parallels-plesk/)
+
+* [Add Group Selection in front end subscription box](http://www.gopiplus.com/work/2015/09/24/email-subscribers-advanced-form-wordpress-plugin/)
 
 = How to install and activate the plugin? and How to setup subscription box widget?﻿ =
 
@@ -135,10 +184,6 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 = How to Import & Export email address? =
 
 [youtube http://www.youtube.com/watch?v=SZEJCijAS1o]
-
-= How to update default alert message from subscription box? =
-
-[youtube http://www.youtube.com/watch?v=VwgEqsE5Ozw]
 
 == Screenshots ==
 
@@ -166,7 +211,13 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 
 = 3.1.1 =
 
-* Fix: Incorrect plugin name on Admin menu
+* Fix: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name
+* Fix: Incorrect plugin name in admin dashboard
+* Fix: Warnings in console on submitting subscription form in Chrome
+* Update: Revised Help & Info page inside plugin
+* Update: Added translation for missing texts
+* Update: Updated POT file
+* Tweaks: Minor tweaks
 
 = 3.1 =
 
@@ -298,6 +349,16 @@ FAQ Answer [http://www.gopiplus.com/work/2014/05/02/email-subscribers-wordpress-
 * First version
 
 == Upgrade Notice ==
+
+= 3.1.1 =
+
+* Fix: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name
+* Fix: Incorrect plugin name in admin dashboard
+* Fix: Warnings in console on submitting subscription form in Chrome
+* Update: Revised Help & Info page inside plugin
+* Update: Added translation for missing texts
+* Update: Updated POT file
+* Tweaks: Minor tweaks
 
 = 3.1 =
 

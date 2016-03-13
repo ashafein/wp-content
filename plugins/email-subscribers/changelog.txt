@@ -4,6 +4,16 @@ Author		: Store Apps
 Author URI	: http://www.storeapps.org/
 License		: GPLv3
 
+********************************Version 3.1.1************************************************************
+
+* Fix: call_user_func_array() expects parameter 1 to be a valid callback, function 'es_admin_option' not found or invalid function name
+* Fix: Incorrect plugin name in admin dashboard
+* Fix: Warnings in console on submitting subscription form in Chrome
+* Update: Revised Help & Info page inside plugin
+* Update: Added translation for missing texts
+* Update: Updated POT file
+* Tweaks: Minor tweaks
+
 ********************************Version 3.1************************************************************
 
 * New: Scripts and styles are now localized and can be translated

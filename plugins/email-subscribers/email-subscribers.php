@@ -3,7 +3,7 @@
  * Plugin Name: Email Subscribers
  * Plugin URI: http://www.storeapps.org/
  * Description: Email subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter. Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and exclude categories to send notifications.
- * Version: 3.1
+ * Version: 3.1.1
  * Author: Store Apps
  * Author URI: http://www.storeapps.org/
  * Donate link: http://www.storeapps.org/
@@ -13,7 +13,7 @@
  * Domain Path: /languages/
  * License: GPLv3
  * Copyright (c) 2015, 2016 Store Apps
-*/
+ */
 
 if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
 
@@ -27,6 +27,8 @@ register_activation_hook( ES_FILE, array( 'es_cls_registerhook', 'es_activation'
 register_deactivation_hook( ES_FILE, array( 'es_cls_registerhook', 'es_deactivation' ) );
 add_action( 'widgets_init', array( 'es_cls_registerhook', 'es_widget_loading' ));
 add_shortcode( 'email-subscribers', 'es_shortcode' );
+
+add_action( 'wp_ajax_es_klawoo_subscribe', array( 'es_cls_registerhook', 'klawoo_subscribe' ) );
 
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'classes'.DIRECTORY_SEPARATOR.'es-directly.php');
 

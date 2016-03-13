@@ -28,7 +28,7 @@ get_header(); ?>
                 <div class="col-lg-5 col-md-5"></div>
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 home-slider-question">
                     <div class="center-block specialist-photo"></div>
-                    <a href="<?php echo($GLOBALS['bulg']['deals_link']); ?>" class="btn center-block button-transparent slider-button">задать вопрос риэлтору</a>
+                    <a href="#" data-toggle="modal" data-target="#contactModal" class="btn center-block button-transparent slider-button">задать вопрос риэлтору</a>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -49,7 +49,7 @@ get_header(); ?>
     <div class="container-fluid color-white home-realty-content">
         <?php
 
-        query_posts(array('post_type'=>'realty','posts_per_page' => '9', 'order_by'=>'date'));
+        query_posts(array('post_type'=>'realty','posts_per_page' => '6', 'order_by'=>'date'));
         if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
             ?>
             <?php get_template_part('items-template-part/realty-item'); ?>
@@ -57,7 +57,21 @@ get_header(); ?>
         else: echo '<h2>Нет записей.</h2>'; endif; ?>
 
     </div>
-
+    <div class="content-pagination">
+        <ul class="list-inline text-center content-pagination">
+            <li><a><-</a></li>
+            <li><a class="active">1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li><a>6</a></li>
+            <li><a>7</a></li>
+            <li><a>...</a></li>
+            <li><a>20</a></li>
+            <li><a>-></a></li>
+        </ul>
+    </div>
 </section>
 
 <section class="color-grey  free-specialist">
@@ -138,16 +152,16 @@ get_header(); ?>
                 <hr/>
                 <div class="container-fluid">';
 
-    while ( $the_query->have_posts() ) {
-        $the_query->the_post();
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
 
-             get_template_part('items-template-part/home-agent-item');
+            get_template_part('items-template-part/home-agent-item');
 
         }
         echo'    </div>';
     }  ?>
 
-        <?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
 </section>
 
 <section class="color-grey text-center home-news">
@@ -160,25 +174,35 @@ get_header(); ?>
     <div class="container-fluid">
         <?php
         $category_id = get_cat_ID( 'Новости' );
-            query_posts(array('post_type'=>'post','cat'=>$category_id,'posts_per_page' => '4','orderby'=>'date','order'   => 'DESC',));
-            if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
-                ?>
-                <?php get_template_part('items-template-part/home-news-item'); ?>
-            <?php endwhile; // конец цикла
-             endif; ?>
+        query_posts(array('post_type'=>'post','cat'=>$category_id,'posts_per_page' => '4','orderby'=>'date','order'   => 'DESC',));
+        if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
+            ?>
+            <?php get_template_part('items-template-part/home-news-item'); ?>
+        <?php endwhile; // конец цикла
+        endif; ?>
         <?php wp_reset_postdata(); ?>
 
 
     </div>
+
     <div class="spacer-45"></div>
-    <div class="home-subscribe">
-        <form>
-            <button class="subscribe-button-blue" type="submit">Получай эксклюзив первым - подпишись прямо сейчас
+    <?php //es_subbox( $namefield = "NO", $desc = "", $group = "hello" ); ?>
+    <?php // es_subbox( $namefield = "NO", $desc = "", $group = "hi" ); ?>
+    <div class="home-subscribe" id="home-subscribe">
+        <div>
+            <div class="es_msg_1">
+                <span id="es_msg_pg_1"></span>
+            </div>
+
+            <button name="es_txt_button_pg_1" id="es_txt_button_pg_1" onclick="return es_submit_pages('<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>',1)" class="subscribe-button-blue" type="button">Получай эксклюзив первым - подпишись прямо сейчас
             </button>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Введите email">
+                <input name="es_txt_email_pg_1" id="es_txt_email_pg_1" onkeypress="if(event.keyCode==13) es_submit_pages('<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>',1)" value="" maxlength="225" type="text" class="form-control" placeholder="Введите email" >
+                <input name="es_txt_name_pg_1" id="es_txt_name_pg_1" value="" type="hidden">
+                <input name="es_txt_group_pg_1" id="es_txt_group_pg_1" value="" type="hidden">
+
             </div>
-        </form>
+        </div>
     </div>
 </section>
 

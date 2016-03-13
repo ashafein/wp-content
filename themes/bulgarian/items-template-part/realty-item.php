@@ -15,7 +15,7 @@
             <div><?php echo (get_field('realty_price').'<i class="fa fa-eur"></i>'); ?></div>
         </div>
         <div class="realty-descr">
-            <?php the_content('') ?>
+            <a href="<?php the_permalink(); ?>" class="text-color-black"><?php the_content('') ?></a>
         </div>
         <a href="<?php the_permalink(); ?>" class="realty-detail">Подробнее >></a>
     </div>

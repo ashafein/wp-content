@@ -11,7 +11,8 @@ if(!defined('ES_PLG_DIR')) define('ES_PLG_DIR', dirname($es_current_folder).DS);
 if(!defined('ES_DIR')) define('ES_DIR', $es_current_folder.DS);
 if(!defined('ES_URL')) define('ES_URL',plugins_url().'/'.strtolower('email-subscribers').'/');
 define('ES_FILE',ES_DIR.'email-subscribers.php');
-if(!defined('ES_FAV')) define('ES_FAV', 'http://www.storeapps.org/support/contact-us/');
+$admin_help_url = admin_url( 'admin.php?page=es-general-information' );
+if(!defined('ES_FAV')) define('ES_FAV', $admin_help_url);
 if(!defined('ES_ADMINURL')) define('ES_ADMINURL', get_option('siteurl') . '/wp-admin/admin.php');
 define('ES_OFFICIAL', 'If you like <strong>Email Subscribers</strong> please leave us <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/email-subscribers?filter=5#postform">&#9733;&#9733;&#9733;&#9733;&#9733;</a> a rating. A huge thank you from StoreApps in advance!');
 

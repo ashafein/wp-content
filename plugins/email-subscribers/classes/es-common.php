@@ -130,7 +130,7 @@ class es_cls_common
 		$report = $report. "End Time: ###ENDTIME### \n";
 		$report = $report. "For more information, Login to your Dashboard and go to Sent Mails menu in Email Subscribers. \n\n";
 		$report = $report. "Thank You \n";
-		$report = $report. "http://www.storeapps.org/ \n";
+		$report = $report. "www.storeapps.org \n";
 		return $report;
 	}
 	
@@ -144,7 +144,7 @@ class es_cls_common
 		$report = $report. "End Time: ###ENDTIME### <br/>";
 		$report = $report. "For more information, Login to your Dashboard and go to Sent Mails menu in Email Subscribers. <br/><br/>";
 		$report = $report. "Thank You <br/>";
-		$report = $report. "http://www.storeapps.org/ <br/>";
+		$report = $report. "www.storeapps.org <br/>";
 		return $report;
 	}
 	

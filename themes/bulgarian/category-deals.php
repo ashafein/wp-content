@@ -32,8 +32,9 @@ get_header(); ?>
         </div>
 
     </section>
-    <?php get_template_part('banner'); ?>
-    <?php get_template_part('contact-form-part/contact-form-grey'); ?>
-</div>
 
+    <?php get_template_part('contact-form-part/contact-form-grey'); ?>
+
+</div>
+<?php get_template_part('banner'); ?>
 <?php get_footer();?>

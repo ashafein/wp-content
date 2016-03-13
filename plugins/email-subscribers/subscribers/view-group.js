@@ -36,5 +36,5 @@ function _es_group_redirect()
 
 function _es_group_help()
 {
-	window.open("http://www.storeapps.org/support/contact-us/");
+	window.open("https://wordpress.org/plugins/email-subscribers/faq/");
 }

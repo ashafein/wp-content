@@ -48,7 +48,6 @@
                     'container_class' => '',
 
                     'menu_class' => 'list-inline text-center',
-                    'menu_id' =>  'header-menu',
                 );
 
                 wp_nav_menu( $args );
@@ -65,7 +64,7 @@
                     <i class="fa fa-envelope-o text-color-blue"></i><?php echo(types_render_usermeta_field( "header_email",array())); ?>
                 </div>
                 <div class="header-callback">
-                    <a  href="#" data-toggle="modal" data-target="#contactModal"><i ></i>Заказать звонок</a>
+                    <a  href="<?php echo($GLOBALS['bulg']['deals_link']); ?>"><i ></i>Заказать звонок</a>
                 </div>
             </div>
         </div>

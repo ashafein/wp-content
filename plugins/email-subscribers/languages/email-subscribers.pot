@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Email Subscribers\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Feb 09 2016 16:21:13 GMT+0530 (IST)\n"
-"POT-Revision-Date: Tue Feb 09 2016 16:34:01 GMT+0530 (IST)\n"
+"POT-Revision-Date: Mon Mar 07 2016 10:28:25 GMT+0530 (IST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -86,8 +86,7 @@ msgstr ""
 #: php:86 ../subscribers/view-subscriber-import.php:107 ../subscribers/view-
 #: subscriber-import.php:138 ../notification/notification-edit.php:100 ..
 #: /notification/notification-add.php:91 ../compose/compose-edit.php:71 ..
-#: /compose/compose-add.php:60 ../cron/cron-add.php:99 ../cron/cron-add.php:100 ..
-#: /cron/cron-add.php:101 ../roles/roles-add.php:81
+#: /compose/compose-add.php:60 ../roles/roles-add.php:81
 msgid "Click here"
 msgstr ""
 
@@ -473,22 +472,18 @@ msgstr ""
 msgid "Database ID"
 msgstr ""
 
-#: ../classes/es-loadwidget.php:24 ../classes/es-register.php:374 ..
+#: ../classes/es-loadwidget.php:24 ../classes/es-register.php:415 ..
 #: /subscribers/view-subscriber-show.php:326 ../subscribers/view-subscriber-show.
 #: php:339
 msgid "Name"
 msgstr ""
 
-#: ../classes/es-loadwidget.php:29 ../classes/es-register.php:379
+#: ../classes/es-loadwidget.php:29 ../classes/es-register.php:420
 msgid "Email *"
 msgstr ""
 
-#: ../classes/es-loadwidget.php:34 ../classes/es-register.php:384
+#: ../classes/es-loadwidget.php:34 ../classes/es-register.php:425
 msgid "Subscribe"
-msgstr ""
-
-#: ../classes/es-register.php:133 ../classes/es-register.php:134
-msgid "Email Subscriber"
 msgstr ""
 
 #: ../classes/es-register.php:136 ../classes/es-register.php:137
@@ -522,244 +517,248 @@ msgstr ""
 msgid "Roles"
 msgstr ""
 
-#: ../classes/es-register.php:160 ../classes/es-register.php:161
+#: ../classes/es-register.php:160
 msgid "Help & Info"
 msgstr ""
 
-#: ../classes/es-register.php:173
+#: ../classes/es-register.php:161
+msgid "<span style=\"color:#f18500;font-weight:bolder;\">Help & Info"
+msgstr ""
+
+#: ../classes/es-register.php:172
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please enter subscriber email address."
 msgstr ""
 
-#: ../classes/es-register.php:174
+#: ../classes/es-register.php:173
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select subscriber email status."
 msgstr ""
 
-#: ../classes/es-register.php:175
+#: ../classes/es-register.php:174
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select or create group for this subscriber."
 msgstr ""
 
-#: ../classes/es-register.php:176
+#: ../classes/es-register.php:175
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr ""
 
-#: ../classes/es-register.php:177
+#: ../classes/es-register.php:176
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select the bulk action."
 msgstr ""
 
-#: ../classes/es-register.php:178
+#: ../classes/es-register.php:177
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to delete selected record(s)?"
 msgstr ""
 
-#: ../classes/es-register.php:179
+#: ../classes/es-register.php:178
 msgctxt "view-subscriber-enhanced-select"
 msgid "Are you sure you want to delete?"
 msgstr ""
 
-#: ../classes/es-register.php:180
+#: ../classes/es-register.php:179
 msgctxt "view-subscriber-enhanced-select"
 msgid ""
 "Do you want to resend confirmation email? \\nAlso please note, this will "
 "update subscriber current status to 'Unconfirmed'."
 msgstr ""
 
-#: ../classes/es-register.php:181
+#: ../classes/es-register.php:180
 msgctxt "view-subscriber-enhanced-select"
 msgid "Please select new subscriber group."
 msgstr ""
 
-#: ../classes/es-register.php:182
+#: ../classes/es-register.php:181
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to update subscribers group?"
 msgstr ""
 
-#: ../classes/es-register.php:183
+#: ../classes/es-register.php:182
 msgctxt "view-subscriber-enhanced-select"
 msgid "Do you want to export the emails?"
 msgstr ""
 
-#: ../classes/es-register.php:184
+#: ../classes/es-register.php:183
 msgctxt "view-subscriber-enhanced-select"
 msgid ""
 "Please select only csv file. Please check official website for csv structure."
 "."
 msgstr ""
 
-#: ../classes/es-register.php:192
+#: ../classes/es-register.php:191
 msgctxt "compose-enhanced-select"
 msgid "Please enter name for configuration."
 msgstr ""
 
-#: ../classes/es-register.php:193
+#: ../classes/es-register.php:192
 msgctxt "compose-enhanced-select"
 msgid "Please select template for this configuration."
 msgstr ""
 
-#: ../classes/es-register.php:194
+#: ../classes/es-register.php:193
 msgctxt "compose-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr ""
 
-#: ../classes/es-register.php:202
+#: ../classes/es-register.php:201
 msgctxt "notification-enhanced-select"
 msgid "Please select subscribers group."
 msgstr ""
 
-#: ../classes/es-register.php:203
+#: ../classes/es-register.php:202
 msgctxt "notification-enhanced-select"
 msgid "Please select notification mail subject. Use compose menu to create new."
 msgstr ""
 
-#: ../classes/es-register.php:204
+#: ../classes/es-register.php:203
 msgctxt "notification-enhanced-select"
 msgid "Please select notification status."
 msgstr ""
 
-#: ../classes/es-register.php:205
+#: ../classes/es-register.php:204
 msgctxt "notification-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr ""
 
-#: ../classes/es-register.php:213
+#: ../classes/es-register.php:212
 msgctxt "sendmail-enhanced-select"
 msgid "Please select your mail subject."
 msgstr ""
 
-#: ../classes/es-register.php:214
+#: ../classes/es-register.php:213
 msgctxt "sendmail-enhanced-select"
 msgid "Please select subscriber email status."
 msgstr ""
 
-#: ../classes/es-register.php:215
+#: ../classes/es-register.php:214
 msgctxt "sendmail-enhanced-select"
 msgid "Are you sure you want to send email to all selected email address?"
 msgstr ""
 
-#: ../classes/es-register.php:227
+#: ../classes/es-register.php:226
 msgctxt "sentmail-enhanced-select"
 msgid "Do you want to delete this record?"
 msgstr ""
 
-#: ../classes/es-register.php:228
+#: ../classes/es-register.php:227
 msgctxt "sentmail-enhanced-select"
 msgid "Do you want to delete all records except latest 10?"
 msgstr ""
 
-#: ../classes/es-register.php:236
+#: ../classes/es-register.php:235
 msgctxt "roles-enhanced-select"
 msgid "Please enter subscriber email address."
 msgstr ""
 
-#: ../classes/es-register.php:237
+#: ../classes/es-register.php:236
 msgctxt "roles-enhanced-select"
 msgid "Please select subscriber email status."
 msgstr ""
 
-#: ../classes/es-register.php:238
+#: ../classes/es-register.php:237
 msgctxt "roles-enhanced-select"
 msgid "Please select or create group for this subscriber."
 msgstr ""
 
-#: ../classes/es-register.php:246
+#: ../classes/es-register.php:245
 msgctxt "cron-enhanced-select"
 msgid "Please select enter number of mails you want to send per hour/trigger."
 msgstr ""
 
-#: ../classes/es-register.php:247
+#: ../classes/es-register.php:246
 msgctxt "cron-enhanced-select"
 msgid "Please enter the mail count, only number."
 msgstr ""
 
-#: ../classes/es-register.php:259
+#: ../classes/es-register.php:258
 msgctxt "widget-enhanced-select"
 msgid "Please enter email address."
+msgstr ""
+
+#: ../classes/es-register.php:259
+msgctxt "widget-enhanced-select"
+msgid "Please provide a valid email address."
 msgstr ""
 
 #: ../classes/es-register.php:260
 msgctxt "widget-enhanced-select"
-msgid "Please provide a valid email address."
+msgid "loading..."
 msgstr ""
 
 #: ../classes/es-register.php:261
 msgctxt "widget-enhanced-select"
-msgid "loading..."
+msgid "Cannot create XMLHTTP instance"
 msgstr ""
 
 #: ../classes/es-register.php:262
 msgctxt "widget-enhanced-select"
-msgid "Cannot create XMLHTTP instance"
+msgid "Subscribed successfully."
 msgstr ""
 
 #: ../classes/es-register.php:263
 msgctxt "widget-enhanced-select"
-msgid "Subscribed successfully."
+msgid ""
+"You have successfully subscribed to the newsletter. You will receive a "
+"confirmation email in few minutes. Please follow the link in it to confirm "
+"your subscription. If the email takes more than 15 minutes to appear in your "
+"mailbox, please check your spam folder."
 msgstr ""
 
 #: ../classes/es-register.php:264
 msgctxt "widget-enhanced-select"
-msgid ""
-"You have successfully subscribed to the newsletter. You will receive a "
-"confirmation email in few minutes. Please follow the link in it to confirm "
-"your subscription. If the email takes more than 15 minutes to appear in your "
-"mailbox, please check your spam folder."
+msgid "Email already exist."
 msgstr ""
 
 #: ../classes/es-register.php:265
 msgctxt "widget-enhanced-select"
-msgid "Email already exist."
+msgid "Oops.. Unexpected error occurred."
 msgstr ""
 
 #: ../classes/es-register.php:266
 msgctxt "widget-enhanced-select"
-msgid "Oops.. Unexpected error occurred."
+msgid "Invalid email address."
 msgstr ""
 
 #: ../classes/es-register.php:267
 msgctxt "widget-enhanced-select"
-msgid "Invalid email address."
+msgid "Please try after some time."
 msgstr ""
 
 #: ../classes/es-register.php:268
 msgctxt "widget-enhanced-select"
-msgid "Please try after some time."
-msgstr ""
-
-#: ../classes/es-register.php:269
-msgctxt "widget-enhanced-select"
 msgid "There was a problem with the request."
 msgstr ""
 
-#: ../classes/es-register.php:276
+#: ../classes/es-register.php:275
 msgctxt "widget-page-enhanced-select"
 msgid "Please enter email address."
 msgstr ""
 
-#: ../classes/es-register.php:277
+#: ../classes/es-register.php:276
 msgctxt "widget-page-enhanced-select"
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: ../classes/es-register.php:278
+#: ../classes/es-register.php:277
 msgctxt "widget-page-enhanced-select"
 msgid "loading..."
 msgstr ""
 
-#: ../classes/es-register.php:279
+#: ../classes/es-register.php:278
 msgctxt "widget-page-enhanced-select"
 msgid "Cannot create XMLHTTP instance"
 msgstr ""
 
-#: ../classes/es-register.php:280
+#: ../classes/es-register.php:279
 msgctxt "widget-page-enhanced-select"
 msgid "Subscribed successfully."
 msgstr ""
 
-#: ../classes/es-register.php:281
+#: ../classes/es-register.php:280
 msgctxt "widget-page-enhanced-select"
 msgid ""
 "You have successfully subscribed to the newsletter. You will receive a "
@@ -768,48 +767,48 @@ msgid ""
 "mailbox, please check your spam folder."
 msgstr ""
 
-#: ../classes/es-register.php:282
+#: ../classes/es-register.php:281
 msgctxt "widget-page-enhanced-select"
 msgid "Email already exist."
 msgstr ""
 
-#: ../classes/es-register.php:283
+#: ../classes/es-register.php:282
 msgctxt "widget-page-enhanced-select"
 msgid "Oops.. Unexpected error occurred."
 msgstr ""
 
-#: ../classes/es-register.php:284
+#: ../classes/es-register.php:283
 msgctxt "widget-page-enhanced-select"
 msgid "Invalid email address."
 msgstr ""
 
-#: ../classes/es-register.php:285
+#: ../classes/es-register.php:284
 msgctxt "widget-page-enhanced-select"
 msgid "Please try after some time."
 msgstr ""
 
-#: ../classes/es-register.php:286
+#: ../classes/es-register.php:285
 msgctxt "widget-page-enhanced-select"
 msgid "There was a problem with the request."
 msgstr ""
 
-#: ../classes/es-register.php:420
+#: ../classes/es-register.php:461
 msgid "Widget Title"
 msgstr ""
 
-#: ../classes/es-register.php:424
+#: ../classes/es-register.php:465
 msgid "Display Name Field"
 msgstr ""
 
-#: ../classes/es-register.php:431
+#: ../classes/es-register.php:472
 msgid "Short Description"
 msgstr ""
 
-#: ../classes/es-register.php:433
+#: ../classes/es-register.php:474
 msgid "Short description about your subscription form."
 msgstr ""
 
-#: ../classes/es-register.php:436
+#: ../classes/es-register.php:477
 msgid "Subscriber Group"
 msgstr ""
 
@@ -1318,27 +1317,29 @@ msgstr ""
 msgid "Send above mail to admin whenever cron URL triggered in your server."
 msgstr ""
 
-#: ../cron/cron-add.php:97
-msgid "How to setup auto emails?"
+#: ../cron/cron-add.php:97 ../help/help.php:97
+msgid "How to setup auto emails using CRON Job through the cPanel or Plesk?"
 msgstr ""
 
-#: ../cron/cron-add.php:98
+#: ../cron/cron-add.php:98 ../help/help.php:99
 msgid ""
-"I strongly recommend you to use \"Send mail via cron job\" option to send your "
-"newsletters and notification. The following link explains how to create a "
-"CRON job through the cPanel or Plesk."
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2015/08/02/how-to-"
+"schedule-auto-emails-for-email-subscribers-wordpress-plugin-in-parallels-"
+"plesk/\">Setup cron job in Plesk</a>"
 msgstr ""
 
-#: ../cron/cron-add.php:99
-msgid "How to setup auto emails (cron job) in Plesk"
+#: ../cron/cron-add.php:99 ../help/help.php:100
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2015/08/04/how-to-"
+"schedule-auto-emails-for-email-subscribers-wordpress-plugin-in-"
+"cpanel/\">Setup cron job in cPanal</a>"
 msgstr ""
 
-#: ../cron/cron-add.php:100
-msgid "How to setup auto emails (cron job) in cPanal"
-msgstr ""
-
-#: ../cron/cron-add.php:101
-msgid "Hosting doesnt support cron jobs?"
+#: ../cron/cron-add.php:100 ../help/help.php:101
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2015/08/08/email-"
+"subscribers-wordpress-plugin-how-to-schedule-auto-mails-cron-mails/\">Hosting "
+"doesnt support cron jobs?</a>"
 msgstr ""
 
 #: ../sendmail/sendmail.php:35
@@ -1471,4 +1472,151 @@ msgstr ""
 msgid ""
 "Select user role to access plugin Help & Info Menu. Only Admin user can "
 "change this value."
+msgstr ""
+
+#: ../help/help.php:23
+msgid "Welcome to Email Subscribers!"
+msgstr ""
+
+#: ../help/help.php:25
+msgid "Thanks for installing! We hope you enjoy using it."
+msgstr ""
+
+#: ../help/help.php:30
+msgid "For more help and tips..."
+msgstr ""
+
+#: ../help/help.php:75
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../help/help.php:77
+msgid ""
+"<strong>How to setup subscription box widget?</strong> - There are 3 ways to "
+"add Subscription box to your website:"
+msgstr ""
+
+#: ../help/help.php:78
+msgid ""
+"(A) Use Shortcode <code>[email-subscribers namefield=\"YES\" desc=\"\" "
+"group=\"Public\"]</code> in any page or post."
+msgstr ""
+
+#: ../help/help.php:79
+msgid ""
+"(B) Go to Dashboard->Appearance->Widgets. You will see a widget called Email "
+"subscribers. Click Add Widget button or drag it to the sidebar on the right."
+msgstr ""
+
+#: ../help/help.php:80
+msgid ""
+"(C) Copy and past this php code to your desired template location : "
+"<code>es_subbox( $namefield = \"YES\", $desc = \"\", $group = \"\" );</code> "
+msgstr ""
+
+#: ../help/help.php:81
+msgid ""
+"Read more from <a target=\"_blank\" href=\"http://www.gopiplus."
+"com/work/2014/05/06/email-subscribers-wordpress-plugin-subscription-"
+"box/\">here</a>.<br>"
+msgstr ""
+
+#: ../help/help.php:83
+msgid ""
+"<strong>How to update default alert message from subscription box?</strong> -"
+" Use any translation plugin (eg: <strong>Loco Translate</strong>) and "
+"translate the text that you want to update."
+msgstr ""
+
+#: ../help/help.php:84
+msgid ""
+"<a target=\"_blank\" href=\"https://wordpress.org/plugins/email-"
+"subscribers/faq/\">Notifications are not getting send to subscriber list</a>"
+msgstr ""
+
+#: ../help/help.php:85
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-subscriber-management-and-import-and-export-"
+"email-address/\">How to import and export email address to subscriber list?"
+"</a>"
+msgstr ""
+
+#: ../help/help.php:86
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-compose-html-emails/\">How to compose static "
+"newsletter?</a></a>"
+msgstr ""
+
+#: ../help/help.php:87
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-subscription-box/\">How to add subscription box "
+"in posts?</a>"
+msgstr ""
+
+#: ../help/help.php:88
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-general-settings/\">How to modify the existing "
+"mails (Opt-in mail, Welcome mail, Admin mails) content?</a>"
+msgstr ""
+
+#: ../help/help.php:89
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-send-email-newsletters/\">How to send static "
+"newsletter manually?</a>"
+msgstr ""
+
+#: ../help/help.php:90
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-send-email-newsletters/\">Where to check sent "
+"mails?</a>"
+msgstr ""
+
+#: ../help/help.php:91
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-notifications-settings/\">How to configure "
+"notification email to subscribers when new posts are published?</a>"
+msgstr ""
+
+#: ../help/help.php:92
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-subscriber-management-and-import-and-export-"
+"email-address/\">How to add new subscribers group?</a>"
+msgstr ""
+
+#: ../help/help.php:93
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/05/06/email-"
+"subscribers-wordpress-plugin-subscriber-management-and-import-and-export-"
+"email-address/\">Is plugin contain bulk update option for subscribers group?"
+"</a>"
+msgstr ""
+
+#: ../help/help.php:94
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/08/17/mail-not-"
+"working-on-email-subscribers-wordpress-plugin/\">Is Mail not working on Email "
+"Subscribers wordpress plugin?</a>"
+msgstr ""
+
+#: ../help/help.php:95
+msgid ""
+"<a target=\"_blank\" href=\"http://www.gopiplus.com/work/2014/08/31/email-"
+"subscribers-wordpress-plugin-network-activation-for-multisite-"
+"installation/\">How to install and activate Email Subscribers on multisite "
+"installation blogs?</a>"
+msgstr ""
+
+#: ../help/help.php:106
+msgid ""
+"If you still can't find solution even after checking in above links, click "
+"<a target=\"_blank\" href=\"http://www.storeapps.org/support/contact-us/\"> "
+"here</a>."
 msgstr ""

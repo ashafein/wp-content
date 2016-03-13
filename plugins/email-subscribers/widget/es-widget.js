@@ -63,8 +63,8 @@ function es_submit_request(url, parameters)
 	http_req.onreadystatechange = eemail_submitresult;
 	http_req.open('POST', url, true);
 	http_req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	http_req.setRequestHeader("Content-length", parameters.length);
-	http_req.setRequestHeader("Connection", "close");
+	// http_req.setRequestHeader("Content-length", parameters.length);
+	// http_req.setRequestHeader("Connection", "close");
 	http_req.send(parameters);
 }
 
@@ -86,7 +86,7 @@ function eemail_submitresult()
 				else if((http_req.responseText).trim() == "subscribed-pending-doubleoptin")
 				{
 					alert(es_widget_notices.es_success_notice);
-					document.getElementById("es_msg").innerHTML = "Subscribed successfully.";
+					document.getElementById("es_msg").innerHTML = es_widget_notices.es_success_message;
 					document.getElementById("es_txt_email").value="";
 					document.getElementById("es_txt_name").value="";
 				}

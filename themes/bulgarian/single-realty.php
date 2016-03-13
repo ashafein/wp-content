@@ -53,7 +53,7 @@ get_header(); ?>
                     <?php echo($post->post_content); ?>
                 </p>
                 <div class="text-center orange-button-wrapper">
-                    <a href="#" class="btn orange-button button-single-orange">Запросить подробности</a>
+                    <a href="#" data-toggle="modal" data-target="#contactModal" class="btn orange-button button-single-orange">Запросить подробности</a>
                 </div>
                 <!--Body content-->
             </div>
@@ -70,7 +70,7 @@ get_header(); ?>
 
                         // loop through the rows of data
                         while ( have_rows('realty_char') ) : the_row();
-
+                            $html = "";
                             $name = get_sub_field('realty_char_name');
                             $content = get_sub_field('realty_char_value');
 
@@ -88,6 +88,7 @@ get_header(); ?>
                         // no rows found
 
                     endif;
+
                     wp_reset_postdata();
 
                     $realty_type = get_field_object('realty_type');
@@ -116,7 +117,7 @@ get_header(); ?>
 
                 </ul>
                 <div class="text-center orange-button-wrapper">
-                    <a href="#" class="btn orange-button button-single-orange">Запросить подробности</a>
+                    <a href="#" data-toggle="modal" data-target="#contactModal" class="btn orange-button button-single-orange">Запросить подробности</a>
                 </div>
 
                 <div class="aside-free-specialist-form">

@@ -110,7 +110,7 @@ class es_cls_default
 			$form['es_email_type'] = 'Dynamic Template';
 			$action = es_cls_compose::es_template_ins($form, $action = "insert");
 			
-			$Sample = '<strong style="color: #990000"> Email subscribersr</strong><p>Email subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter.'; 
+			$Sample = '<strong style="color: #990000"> Email Subscribers</strong><p>Email Subscribers plugin has options to send newsletters to subscribers. It has a separate page with HTML editor to create a HTML newsletter.'; 
 			$Sample .= ' Also have options to send notification email to subscribers when new posts are published to your blog. Separate page available to include and exclude categories to send notifications.';
 			$Sample .= ' Using plugin Import and Export options admins can easily import registered users and commenters to subscriptions list.</p>';
 			$Sample .= ' <strong style="color: #990000">Plugin Features</strong><ol>';

@@ -26,22 +26,21 @@ get_header(); ?>
 
             <?php get_template_part('search-vertical'); ?>
 
-            <div class="color-white little-subscribe-form">
-                <form class="form-inline blue-form">
-                    <div class="form-group">
-                        <label for="email-subscribe">Email*</label>
-                        <input type="email" class="form-control" id="email-subscribe" placeholder="">
-                    </div>
-                    <button type="submit" class="btn blue-button">Получай эксклюзив первым</button>
-                </form>
-            </div>
+            <?php get_template_part('contact-form'); ?>
         </div>
 
         <div class="span8">
             <?php
                 $i = 1;
                 $html = '';
-                query_posts(array('post_type'=>'region','posts_per_page' => '200','orderby' => 'post_title', 'order'   => 'ASC',));
+                query_posts(array(
+                    'post_type'=>'region',
+                    'posts_per_page' => '200',
+                    'meta_key'	=> 'region_order',
+                    'orderby' => 'meta_value_num',
+                    'order'   => 'ASC',
+
+                    ));
                 if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp
 
                 $i++;

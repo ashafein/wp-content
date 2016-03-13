@@ -47,15 +47,8 @@ get_header(); ?>
                 <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 
                 <?php get_template_part('search-vertical'); ?>
-                <div class="color-white little-subscribe-form">
-                    <form class="form-inline blue-form">
-                        <div class="form-group">
-                            <label for="email-subscribe">Email*</label>
-                            <input type="email" class="form-control" id="email-subscribe" placeholder="">
-                        </div>
-                        <button type="submit" class="btn blue-button">Получай эксклюзив первым</button>
-                    </form>
-                </div>
+
+                <?php get_template_part('contact-form'); ?>
 
             </div>
             <?php pagination(); // пагинация, функция нах-ся в function.php ?>

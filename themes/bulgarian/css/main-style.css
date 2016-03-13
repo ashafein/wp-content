@@ -12,10 +12,26 @@ html,body {
     display: flex;
     flex-direction: column;
 
+
 }
+
+.to_top{
+    position:fixed;
+    top:150px;
+    z-index: 20;
+}
+
 
 .page-wrapper{
     flex: 1;
+    padding-top: 105px;
+}
+
+header {
+    padding: 15px 20px 15px 20px;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
 }
 
 .text-underline{
@@ -164,9 +180,9 @@ h1, h2 {
 }
 
 /* Header menu */
-header {
-padding: 15px 20px 15px 20px;
-}
+
+
+
 
 .bulgaria-logo, .header-nav, .header-contacts {
     margin-bottom: 15px;
@@ -214,6 +230,11 @@ footer .header-contacts .header-mail a, footer .header-contacts .header-mail a:h
     vertical-align: bottom;
 }
 
+.header-nav ul.list-inline li{
+    height: 20px;
+    vertical-align: text-top;
+}
+
 .header-nav ul.list-inline li:first-child a{
     background-image: url('../img/home-link.png');
     background-repeat: no-repeat;
@@ -223,6 +244,40 @@ footer .header-contacts .header-mail a, footer .header-contacts .header-mail a:h
     display: inline-block;
     margin: 0 0 2px 0;
 }
+
+.header-nav ul.sub-menu{
+    list-style: none;
+    text-align: left;
+}
+
+.header-nav ul.sub-menu li:first-child a{
+    background-image: none;
+}
+.ui-widget-content{
+    border: 0px;
+}
+
+.ui-widget-content a{
+    color: #337ab7;
+}
+
+.ui-menu .sub-menu {
+    left: 0 !important;
+    top: 28px !important;
+
+}
+
+.ui-menu .sub-menu li{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #f9f9f9;
+    height: auto !important;
+    width: 200px !important;
+}
+
+.ui-menu .sub-menu li a{
+    width: auto !important;
+}
+
 /* END Header menu */
 
 .home-page-slider{
@@ -734,6 +789,7 @@ h2.home-page-h2 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
     padding: 15px 40px 15px 40px;
     border-radius: 2px;
+    display: inline-block;
     border: 0;
     color: #e6e6e6;
     font-size: 24px;
@@ -1057,12 +1113,18 @@ h3.product-header{
 }
 
 .product-description{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 15px 20px 30px 20px;
     font-size: 14px;
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.product-description{
+    text-indent: 20px;
 }
 
 .product-carousel li{
@@ -1401,7 +1463,7 @@ h3.product-header{
 /*END  Article item */
 .sidebar-page .aside-free-specialist-content{
     min-width:260px;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px 0px 20px;
 }
 
 .little-subscribe-form{
@@ -1636,7 +1698,7 @@ h3.product-header{
 }
 
 .sail-offer-item div img{
-    width:391px;
+    width: 100%;
     height: 215px;
 }
 
@@ -1675,6 +1737,7 @@ h3.product-header{
 }
 
 .deals-detail h3{
+    margin-top: 0;
     font-weight: 600;
     margin-bottom: 30px;
 
@@ -2215,4 +2278,27 @@ p.aside-specialist-top-text{
     background-size: contain;
     background-position: bottom center;
     margin: 0 auto;
+}
+
+.bulgarian-h{
+    margin-top: 0;
+}
+
+.modal-close {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+}
+
+#subscribeModal {
+    margin-top: 100px;
+}
+#contactModal {
+    margin-top: 20px;
+}
+
+#contactModal .modal-close{
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 20px;
 }

@@ -11,8 +11,8 @@
                     Болгарии в <b>закрытой базе объектов</b>
                 </p>
             </div>
-            <?php //echo do_shortcode('[contact-form-7 id="104" html_class="text-center row-fluid"]'); ?>
-            <?php echo do_shortcode('[contact-form-7 id="68" html_class="text-center row-fluid"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="104" html_class="text-center row-fluid"]'); ?>
+            <?php //echo do_shortcode('[contact-form-7 id="68" html_class="text-center row-fluid"]'); ?>
 
         </div>
     </div>

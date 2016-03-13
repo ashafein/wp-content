@@ -1,4 +1,4 @@
-<div class="search-form">
+<div class="search-form"  id="stick_menu">
     <form name="search" action="<?php get_home_url() ?>/search/" method="get" class="form-inline orange-form">
         <?php $query_vars=$_GET; ?>
         <div class="form-group">

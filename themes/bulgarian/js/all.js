@@ -35,4 +35,6 @@ $(document).ready(function() {
 
     });
 
+    $( "#header-menu" ).menu();
+
 });

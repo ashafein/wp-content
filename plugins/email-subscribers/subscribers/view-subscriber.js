@@ -5,7 +5,7 @@ function _es_redirect()
 
 function _es_help()
 {
-	window.open("http://www.storeapps.org/support/contact-us/");
+	window.open("https://wordpress.org/plugins/email-subscribers/faq/");
 }
 
 function _es_addemail()
@@ -123,8 +123,6 @@ function _es_search_count_action(cnt)
 	document.frm_es_display.action="admin.php?page=es-view-subscribers";
 	document.frm_es_display.submit();
 }
-
-
 
 function _es_bulkaction()
 {

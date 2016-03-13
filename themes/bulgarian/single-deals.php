@@ -22,7 +22,7 @@ get_header(); ?>
                     <?php echo $post->post_content; ?>
                 </p>
                 <div class="text-center orange-button-wrapper">
-                    <a href="#" class="btn orange-button button-single-orange">Хочу узнать подробности</a>
+                    <a href="#" data-toggle="modal" data-target="#contactModal" class="btn orange-button button-single-orange">Хочу узнать подробности</a>
                 </div>
             </div>
 
@@ -32,15 +32,7 @@ get_header(); ?>
 
                 <?php get_template_part('search-vertical'); ?>
 
-                <div class="color-white little-subscribe-form">
-                    <form class="form-inline blue-form">
-                        <div class="form-group">
-                            <label for="email-subscribe">Email*</label>
-                            <input type="email" class="form-control" id="email-subscribe" placeholder="">
-                        </div>
-                        <button type="submit" class="btn blue-button">Получай эксклюзив первым</button>
-                    </form>
-                </div>
+                <?php get_template_part('contact-form'); ?>
 
             </div>
         </div>

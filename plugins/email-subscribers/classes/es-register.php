@@ -4,7 +4,7 @@ class es_cls_registerhook
 	public static function es_activation()
 	{
 		global $wpdb;
-		
+
 		add_option('email-subscribers', "2.9");
 
 		// Plugin tables
@@ -43,7 +43,7 @@ class es_cls_registerhook
 			$errors[] = __('These tables could not be created on installation ' . implode(', ',$missingtables), 'email-subscribers');
             $has_errors=true;
         }
-		
+
 		// if error call wp_die()
         if($has_errors) 
 		{
@@ -105,7 +105,7 @@ class es_cls_registerhook
 	{
 		// do not generate any output here
 	}
-	
+
 	public static function es_adminmenu()
 	{
 		$es_c_rolesandcapabilities = get_option('es_c_rolesandcapabilities', 'norecord');
@@ -130,36 +130,35 @@ class es_cls_registerhook
 			$es_roles_help = $es_c_rolesandcapabilities['es_roles_help'];
 		}
 		
-		add_menu_page( __( 'Email Subscriber', 'email-subscribers' ), 
-			__( 'Email Subscriber', 'email-subscribers' ), 'admin_dashboard', 'email-subscribers', 'es_admin_option', ES_URL.'images/mail.png', 51 );
-			
+		add_menu_page( __( 'Email Subscribers', 'email-subscribers' ), 
+			__( 'Email Subscribers', 'email-subscribers' ), 'admin_dashboard', 'email-subscribers', array( 'es_cls_registerhook', 'es_admin_option'), ES_URL.'images/mail.png', 51 );
+
 		add_submenu_page('email-subscribers', __( 'Subscribers', 'email-subscribers' ), 
-			__( 'Subscribers', 'email-subscribers' ), $es_roles_subscriber, 'es-view-subscribers', array( 'es_cls_intermediate', 'es_subscribers' ));
-			
+		 	__( 'Subscribers', 'email-subscribers' ), $es_roles_subscriber, 'es-view-subscribers', array( 'es_cls_intermediate', 'es_subscribers' ));
+
 		add_submenu_page('email-subscribers', __( 'Compose', 'email-subscribers' ), 
 			__( 'Compose', 'email-subscribers' ), $es_roles_mail, 'es-compose', array( 'es_cls_intermediate', 'es_compose' ));
-			
+
 		add_submenu_page('email-subscribers', __( 'Notification', 'email-subscribers' ), 
 			__( 'Notification', 'email-subscribers' ), $es_roles_notification, 'es-notification', array( 'es_cls_intermediate', 'es_notification' ));
-			
+
 		add_submenu_page('email-subscribers', __( 'Send Email', 'email-subscribers' ), 
 			__( 'Send Email', 'email-subscribers' ), $es_roles_sendmail, 'es-sendemail', array( 'es_cls_intermediate', 'es_sendemail' ));
-		
+
 		add_submenu_page('email-subscribers', __( 'Cron', 'email-subscribers' ), 
 			__( 'Cron Mail', 'email-subscribers' ), $es_roles_sendmail, 'es-cron', array( 'es_cls_intermediate', 'es_cron' ));
-				
+
 		add_submenu_page('email-subscribers', __( 'Settings', 'email-subscribers' ), 
 			__( 'Settings', 'email-subscribers' ), $es_roles_setting, 'es-settings', array( 'es_cls_intermediate', 'es_settings' ));	
-			
+
 		add_submenu_page('email-subscribers', __( 'Roles', 'email-subscribers' ), 
 			__( 'Roles', 'email-subscribers' ), 'administrator', 'es-roles', array( 'es_cls_intermediate', 'es_roles' ));	
-			
+
 		add_submenu_page('email-subscribers', __( 'Sent Mails', 'email-subscribers' ), 
 			__( 'Sent Mails', 'email-subscribers' ), $es_roles_sentmail, 'es-sentmail', array( 'es_cls_intermediate', 'es_sentmail' ));	
-			
+
 		add_submenu_page('email-subscribers', __( 'Help & Info', 'email-subscribers' ), 
-			__( 'Help & Info', 'email-subscribers' ), $es_roles_help, 'es-general-information', array( 'es_cls_intermediate', 'es_information' ));
-			
+			__( '<span style="color:#f18500;font-weight:bolder;">Help & Info', 'email-subscribers' ), $es_roles_help, 'es-general-information', array( 'es_cls_intermediate', 'es_information' ));
 	}
 
 	public static function es_load_scripts() {
@@ -167,8 +166,8 @@ class es_cls_registerhook
 		if( !empty( $_GET['page'] ) ) {
 			switch ( $_GET['page'] ) {
 				case 'es-view-subscribers':
-					wp_register_script( 'es-view-subscriber', ES_URL . 'subscribers/view-subscriber.js' );
-					wp_enqueue_script( 'es-view-subscriber', ES_URL . 'subscribers/view-subscriber.js' );
+					wp_register_script( 'es-view-subscribers', ES_URL . 'subscribers/view-subscriber.js' );
+					wp_enqueue_script( 'es-view-subscribers', ES_URL . 'subscribers/view-subscriber.js' );
 					$es_select_params = array(
 						'es_subscriber_email'           => _x( 'Please enter subscriber email address.', 'view-subscriber-enhanced-select', 'email-subscribers' ),
 						'es_subscriber_email_status'    => _x( 'Please select subscriber email status.', 'view-subscriber-enhanced-select', 'email-subscribers' ),
@@ -183,7 +182,7 @@ class es_cls_registerhook
 						'es_subscriber_export'          => _x( 'Do you want to export the emails?', 'view-subscriber-enhanced-select', 'email-subscribers' ),
 						'es_subscriber_csv_file'        => _x( 'Please select only csv file. Please check official website for csv structure..', 'view-subscriber-enhanced-select', 'email-subscribers' )
 					);
-					wp_localize_script( 'es-view-subscriber', 'es_view_subscriber_notices', $es_select_params );				
+					wp_localize_script( 'es-view-subscribers', 'es_view_subscriber_notices', $es_select_params );				
 					break;
 				case 'es-compose':
 					wp_register_script( 'es-compose', ES_URL . 'compose/compose.js' );
@@ -193,7 +192,7 @@ class es_cls_registerhook
 						'es_configuration_template'	=> _x( 'Please select template for this configuration.', 'compose-enhanced-select', 'email-subscribers' ),
 						'es_compose_delete_record'  => _x( 'Do you want to delete this record?', 'compose-enhanced-select', 'email-subscribers' )
 					);
-					wp_localize_script( 'es-compose', 'es_compose_notices', $es_select_params );				
+					wp_localize_script( 'es-compose', 'es_compose_notices', $es_select_params );
 					break;
 				case 'es-notification':
 					wp_register_script( 'es-notification', ES_URL . 'notification/notification.js' );
@@ -293,7 +292,49 @@ class es_cls_registerhook
 
 	public static function es_widget_loading() {
 		register_widget( 'es_widget_register' );
-	}	
+	}
+
+	public static function klawoo_subscribe() {
+        $url = 'http://app.klawoo.com/subscribe';
+
+        if( !empty( $_POST ) ) {
+            $params = $_POST;
+        } else {
+            exit();
+        }
+        $method = 'POST';
+        $qs = http_build_query( $params );
+
+        $options = array(
+            'timeout' => 15,
+            'method' => $method
+        );
+
+        if ( $method == 'POST' ) {
+            $options['body'] = $qs;
+        } else {
+            if ( strpos( $url, '?' ) !== false ) {
+                $url .= '&'.$qs;
+            } else {
+                $url .= '?'.$qs;
+            }
+        }
+
+        $response = wp_remote_request( $url, $options );
+
+        if ( wp_remote_retrieve_response_code( $response ) == 200 ) {
+            $data = $response['body'];
+            if ( $data != 'error' ) {
+                             
+                $message_start = substr( $data, strpos( $data,'<body>' ) + 6 );
+                $remove = substr( $message_start, strpos( $message_start,'</body>' ) );
+                $message = trim( str_replace( $remove, '', $message_start ) );
+                echo ( $message );
+                exit();                
+            }
+        }
+        exit();
+    }
 }
 
 function es_sync_registereduser( $user_id )

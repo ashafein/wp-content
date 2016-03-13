@@ -27,15 +27,7 @@ get_header(); ?>
             </div>
 
             <div class="span4 page-aside-right">
-                <div class="color-white little-subscribe-form">
-                    <form class="form-inline blue-form">
-                        <div class="form-group">
-                            <label for="email-subscribe">Email*</label>
-                            <input type="email" class="form-control" id="email-subscribe" placeholder="">
-                        </div>
-                        <button type="submit" class="btn blue-button">Получай эксклюзив первым</button>
-                    </form>
-                </div>
+                <?php get_template_part('contact-form'); ?>
 
                 <?php get_template_part('contact-form-part/contact-form-sidebar'); ?>
 

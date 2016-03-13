@@ -4,14 +4,14 @@
 
 
 
-<a href="<?php echo($GLOBALS['bulg']['deals_link']); ?>" class="question"> Задать вопрос</a>
+<a href="#" data-toggle="modal" data-target="#contactModal" class="question"> Задать вопрос</a>
 <footer>
     <div class="text-color-white container-fluid">
         <div class="row-fluid">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="footer-subscribe">
                     <p>ХОТИТЕ ПОЛУЧАТЬ НОВЫЕ ОБЪЕКТЫ?</p>
-                    <a href="" target="blank"> Подпишитесь прямо сейчас</a>
+                    <a href="#" data-toggle="modal" data-target="#subscribeModal" > Подпишитесь прямо сейчас</a>
                 </div>
                 <div class="footer-contacts">
                     <div class="text-left header-contacts">
@@ -112,7 +112,51 @@
     </div>
     <a href="#top" class="to-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;"></a>
 </footer>
+<!-- SubscribeModal -->
+<div id="subscribeModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+            <div class="color-white little-subscribe-form">
+                <div class="form-inline blue-form">
+                    <div class="es_msg_2">
+                        <span id="es_msg_pg_2"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="es_txt_email_pg_2">Email*</label>
+                        <div  class="modal-close" data-dismiss="modal">Close X</div>
+                        <div class="clearfix"></div>
+                        <input name="es_txt_email_pg_2" id="es_txt_email_pg_2" onkeypress="if(event.keyCode==13) es_submit_pages('<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>',2)" value="" maxlength="225" type="text" class="form-control"  placeholder="">
+                        <input name="es_txt_name_pg_2" id="es_txt_name_pg_2" value="" type="hidden">
+                        <input name="es_txt_group_pg_2" id="es_txt_group_pg_2" value="" type="hidden">
+                    </div>
+                    <button name="es_txt_button_pg_2" id="es_txt_button_pg_2" onclick="return es_submit_pages('<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>',2)" class="btn blue-button"  type="button">Получай эксклюзив первым</button>
+                </div>
+            </div>
 
+    </div>
+</div>
+<!--END SubscribeModal -->
+
+<!-- SubscribeModal -->
+<div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div  class="modal-close" data-dismiss="modal">Close X</div>
+        <?php get_template_part('contact-form-part/contact-form-blue'); ?>
+    </div>
+</div>
+<!--END SubscribeModal -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        if(document.getElementById("stick_menu")) {
+            var start_pos = $('#stick_menu').offset().top;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= start_pos) {
+                    if ($('#stick_menu').hasClass() == false) $('#stick_menu').addClass('to_top');
+                }
+                else $('#stick_menu').removeClass('to_top');
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
